@@ -1,5 +1,8 @@
 :root {
-  
+  --main-color :#4640DE  ;
+  --second-color :#42AFFF;
+  --third-color :#C9CBD5;
+  --fourth-color :#f8f8f2;
 }
 
 * {
