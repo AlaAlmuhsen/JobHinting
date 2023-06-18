@@ -1,0 +1,37 @@
+{
+    "users": [
+        {
+            "name": "asc",
+            "password": "asc",
+            "email": "alaa",
+            "jobtitle": "full-stack",
+            "type": "user",
+            "avatar": "url",
+            "id": "1"
+        }
+    ],
+    "company": [
+        {
+            "name": "discrd",
+            "indusrty": "voice",
+            "country": "use",
+            "email": "discord@discord.com",
+            "password" : "discord123",
+            "type":"company",
+            "logo": "url",
+            "id": 1
+        }
+    ],
+    "jobs": [
+        {
+            "title": "UI/Ux",
+            "desc": "lorem lorem lorem lorem lorem",
+            "companyId": 1,
+            "dateOfPost": "2023/8/15",
+            "category": "IT",
+            "typeOfEmployment": "full-time",
+            "jobLevel": "junior",
+            "id": 1
+        }
+    ]
+}
