@@ -18,3 +18,57 @@
 
 /*  Start Browse */
 /*  End Browse */
+
+/* start Dashboard  */
+.dash-board {
+  width: 100%;
+  display: flex;
+}
+.dash-board .side-nav {
+  background-color: var(--fourth-color);
+  width: 20%;
+  height: 100vh;
+  padding: 0px 10px;
+  position: relative;
+}
+.dash-board .side-nav ul {
+  list-style: none;
+  margin-top: 5px;
+  padding: 0px 10px;
+}
+.dash-board .side-nav ul li{
+  color: black;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.dash-board .side-nav ul li.active{
+  color: var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+  font-size: 18px;
+}
+.dash-board .side-nav .logo {
+  color: var(--main-color);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+.dash-board .side-nav .sign-out {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background-color: var(--main-color);
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+
+}
+.dash-board-body {
+  background-color: var(--third-color);
+  width: 100%;
+}
+/* end Dashboard  */
