@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const Header = ({ active }) => {
     let personData = JSON.parse(localStorage.getItem('userData'))[0];
-
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
