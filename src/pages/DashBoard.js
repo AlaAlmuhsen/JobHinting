@@ -6,7 +6,6 @@ const DashBoard = () => {
     function handleItemClicked(item) {
         setActiveItem(item)
     }
-    localStorage.setItem('data', "a;aa");
 
     return (
         <div className='dash-board'>
@@ -21,7 +20,8 @@ const DashBoard = () => {
                 <button className="sign-out">Log Out</button>
             </div>
             <div className="dash-board-body">
-                
+                {activeItem === 'item1' && <h1>home</h1>}
+                {activeItem === 'item2' && <h1>messages</h1>}
             </div>
         </div>
     )

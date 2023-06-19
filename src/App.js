@@ -15,7 +15,7 @@ function App() {
       <Route path='/findjob' element={<Findjob />}/>
       <Route path='/browsecompanies' element={<Browsecompanies />}/>
       <Route path='/dashboard' element={<DashBoard />}/>
-      <Route path='/Login' element={<Login />}/>
+      <Route path='/login' element={<Login />}/>
     </Routes>
   );
 }
