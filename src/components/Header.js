@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Header = ({ active }) => {
+    let personData = JSON.parse(localStorage.getItem('userData'))[0];
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -49,7 +52,7 @@ const Header = ({ active }) => {
             (
                 <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg" className="rounded-circle" height="22"
+          <img src={personData.avatar} className="rounded-circle" height="22"
               alt="" loading="lazy" />
           </a>
           <ul className="dropdown-menu">
