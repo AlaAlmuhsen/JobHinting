@@ -53,7 +53,7 @@ const Login = () => {
             navigate('/');
         }
         else if(companyinfo.length === 1){
-            localStorage.setItem('COMPANYData', JSON.stringify(companyinfo));
+            localStorage.setItem('companyData', JSON.stringify(companyinfo));
             sessionStorage.setItem('companyActive' , true);
             navigate('/dashboard');
         }

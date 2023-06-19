@@ -59,12 +59,22 @@
         {
             "name": "discrd",
             "indusrty": "voice",
-            "country": "use",
+            "country": "usa",
             "email": "discord@discord.com",
             "password" : "discord123",
             "type":"company",
             "logo": "url",
             "id": 1
+        },
+        {
+            "name": "Estarta",
+            "indusrty": "it-solutions",
+            "country": "Amman",
+            "email": "Estarta@estarta.com",
+            "password" : "Estarta123",
+            "type":"company",
+            "logo": "url",
+            "id": 2
         }
     ],
     "jobs": [
@@ -83,14 +93,28 @@
     ],
     "application": [
         {
-            "comnpanyid": "1",
+            "companyid": "1",
             "jobid" : "1",
-            "firstname" : "fname",
-            "lastname" : "lname",
-            "major" : "major",
+            "firstname" : "alaa",
+            "lastname" : "almohsen",
+            "major" : "cis",
             "birthday" : "15/10/1998",
             "status" : "pending",
-            "phonenumber" : "0777777777"
+            "phonenumber" : "0777777777",
+            "timeOfApply" : "19/6/2023",
+            "id":"1"
+        },
+        {
+            "companyid": "2",
+            "jobid" : "2",
+            "firstname" : "Tasneem",
+            "lastname" : "Tasneem",
+            "major" : "CS",
+            "birthday" : "22/4/2001",
+            "status" : "pending",
+            "phonenumber" : "0777777777",
+            "timeOfApply" : "19/6/2023",
+            "id":"2"
         }
     ]
 }
