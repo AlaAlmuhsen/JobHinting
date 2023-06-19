@@ -7,6 +7,7 @@ const DashBoard = () => {
         setActiveItem(item)
     }
 
+    
     return (
         <div className='dash-board'>
             <div className='side-nav'>
@@ -22,6 +23,8 @@ const DashBoard = () => {
             <div className="dash-board-body">
                 {activeItem === 'item1' && <h1>home</h1>}
                 {activeItem === 'item2' && <h1>messages</h1>}
+                {activeItem === 'item3' && <h1>Company Profile</h1>}
+                {activeItem === 'item4' && <h1>All Aplications</h1>}
             </div>
         </div>
     )

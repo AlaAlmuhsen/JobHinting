@@ -76,7 +76,21 @@
             "category": "IT",
             "typeOfEmployment": "full-time",
             "jobLevel": "junior",
+            "capacity" : "10",
+            "applied" : "0",
             "id": 1
+        }
+    ],
+    "application": [
+        {
+            "comnpanyid": "1",
+            "jobid" : "1",
+            "firstname" : "fname",
+            "lastname" : "lname",
+            "major" : "major",
+            "birthday" : "15/10/1998",
+            "status" : "pending",
+            "phonenumber" : "0777777777"
         }
     ]
 }

@@ -3,17 +3,14 @@ import useFetch from '../customhooks/useFetch'
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    
-    const {data : u , ispending} = useFetch('http://localhost:8000/users');
-    const {data : c , isPending} = useFetch('http://localhost:8000/company');
-    const [usertype , setUserType] = useState('');
+    const {data : u } = useFetch('http://localhost:8000/users');
+    const {data : c} = useFetch('http://localhost:8000/company');
 
     const [inputEmail , setInputEmail] = useState('')
     const [inputPassword , setInputPassword] = useState('')
 
     const navigate = useNavigate();
 
-    // const [userInfo , setUserInfo] = (null);
 
     function handleInputEmail(e){
         setInputEmail(e.target.value);
@@ -43,16 +40,22 @@ const Login = () => {
         e.preventDefault();
 
         let userinfo = u.filter((userData) => {
-            return inputEmail == userData.email && inputPassword == userData.password
+            return inputEmail === userData.email && inputPassword === userData.password
         })
+        let companyinfo = c.filter((companyData) => {
+            return inputEmail === companyData.email && inputPassword === companyData.password
+        })
+        localStorage.clear();
+        sessionStorage.clear();
         if (userinfo.length === 1) {
-            setUserType('user');
             localStorage.setItem('userData', JSON.stringify(userinfo));
             sessionStorage.setItem('userActive' , true);
             navigate('/');
         }
-        else {
-            setUserType('');
+        else if(companyinfo.length === 1){
+            localStorage.setItem('COMPANYData', JSON.stringify(companyinfo));
+            sessionStorage.setItem('companyActive' , true);
+            navigate('/dashboard');
         }
     }
 
