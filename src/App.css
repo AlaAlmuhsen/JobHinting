@@ -3,6 +3,7 @@
   --second-color :#42AFFF;
   --third-color :#C9CBD5;
   --fourth-color :#f8f8f2;
+  --fifth-color :#f8f8fd;
 }
 
 * {
@@ -29,7 +30,7 @@ ul , li {
   display: flex;
 }
 .dash-board .side-nav {
-  background-color: var(--fourth-color);
+  background-color: var(--fifth-color);
   width: 20%;
   height: 100vh;
   padding: 0px 10px;
@@ -72,7 +73,22 @@ ul , li {
 
 }
 .dash-board-body {
-  background-color: var(--third-color);
   width: 100%;
 }
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid rgba(179, 179, 179, 0.689);
+}
+.dashboard-header .btn-postjob a{
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
 /* end Dashboard  */

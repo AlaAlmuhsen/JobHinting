@@ -1,4 +1,6 @@
 import { useState } from "react";
+import DashboardHeader from "../components/DashboardHeader";
+import AllAplications from "../components/AllAplications";
 
 const DashBoard = () => {
 
@@ -21,10 +23,11 @@ const DashBoard = () => {
                 <button className="sign-out">Log Out</button>
             </div>
             <div className="dash-board-body">
+                <DashboardHeader />
                 {activeItem === 'item1' && <h1>home</h1>}
                 {activeItem === 'item2' && <h1>messages</h1>}
                 {activeItem === 'item3' && <h1>Company Profile</h1>}
-                {activeItem === 'item4' && <h1>All Aplications</h1>}
+                {activeItem === 'item4' && <AllAplications />}
             </div>
         </div>
     )
