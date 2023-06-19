@@ -49,14 +49,14 @@ const Header = ({ active }) => {
             (
                 <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="rounded-circle" height="22"
+          <img src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg" className="rounded-circle" height="22"
               alt="" loading="lazy" />
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><Link className="dropdown-item">Action</Link></li>
+            <li><Link className="dropdown-item">Another action</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item">Something else here</Link></li>
           </ul>
         </li>
             //     <li className="nav-item me-3 me-lg-0 dropdown">
