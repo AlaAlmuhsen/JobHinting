@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Header = ({ active }) => {
+    let personData = JSON.parse(localStorage.getItem('userData'))[0];
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -49,14 +52,14 @@ const Header = ({ active }) => {
             (
                 <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="rounded-circle" height="22"
+          <img src={personData.avatar} className="rounded-circle" height="22"
               alt="" loading="lazy" />
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#">Action</a></li>
-            <li><a className="dropdown-item" href="#">Another action</a></li>
+            <li><Link className="dropdown-item">Action</Link></li>
+            <li><Link className="dropdown-item">Another action</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <li><Link className="dropdown-item">Something else here</Link></li>
           </ul>
         </li>
             //     <li className="nav-item me-3 me-lg-0 dropdown">
