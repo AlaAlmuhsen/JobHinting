@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 const Header = ({ active }) => {
-    let personData = JSON.parse(localStorage.getItem('userData')[0]);
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -47,41 +46,34 @@ const Header = ({ active }) => {
                 </Link>
               </li>
             </ul>
-            {sessionStorage.getItem("userActive") === "true" ?
-            (
+            {sessionStorage.getItem("userActive") === "true" &&
                 <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src={personData.avatar} className="rounded-circle" height="22"
-              alt="" loading="lazy" />
-          </a>
-          <ul className="dropdown-menu">
-            <li><Link className="dropdown-item">Action</Link></li>
-            <li><Link className="dropdown-item">Another action</Link></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><Link className="dropdown-item">Something else here</Link></li>
-          </ul>
-        </li>
-            //     <li className="nav-item me-3 me-lg-0 dropdown">
-            //     <Link className="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-mdb-toggle="dropdown"
-            //       aria-expanded="false">
-            //       <img src="https://mdbootstrap.com/img/Photos/Avatars/img(31).jpg" className="rounded-circle" height="22"
-            //         alt="" loading="lazy" />
-            //     </Link>
-
-            //   </li>
-            )
-            :
-            (
-              <form className="d-flex" role="search">
-                <Link to="/Login" className="btn" type="submit">
-                  Login
-                </Link>
-                <Link className="btn" type="submit">
-                  Sign Up
-                </Link>
-              </form>
-              )
-            }
+                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img 
+                      src='https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png' 
+                      className="rounded-circle" 
+                      height="22"
+                      alt="" 
+                      loading="lazy" />
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li><Link className="dropdown-item">Action</Link></li>
+                    <li><Link className="dropdown-item">Another action</Link></li>
+                    <li><hr className="dropdown-divider"/></li>
+                    <li><Link className="dropdown-item">Something else here</Link></li>
+                  </ul>
+                </li>      
+              }
+              {sessionStorage.getItem("userActive") === "false" &&
+                <form className="d-flex" role="search">
+                  <Link to="/Login" className="btn" type="submit">
+                    Login
+                  </Link>
+                  <Link className="btn" type="submit">
+                    Sign Up
+                  </Link>
+                </form>
+              }
           </div>
         </div>
       </nav>

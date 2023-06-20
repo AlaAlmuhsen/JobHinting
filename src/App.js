@@ -9,6 +9,7 @@ import DashBoard from './pages/DashBoard';
 import Login from './pages/Login';
 
 function App() {
+  window.sessionStorage.setItem("userActive",false)
   return (
     <Routes>
       <Route path='/' element={<Home />}/>
