@@ -83,12 +83,24 @@
             "desc": "lorem lorem lorem lorem lorem",
             "companyId": 1,
             "dateOfPost": "2023/8/15",
-            "category": "IT",
+            "category": "tec",
             "typeOfEmployment": "full-time",
             "jobLevel": "junior",
             "capacity" : "10",
             "applied" : "0",
             "id": 1
+        },
+        {
+            "title": "html",
+            "desc": "lorem lorem lorem lorem lorem",
+            "companyId": 2,
+            "dateOfPost": "2023/8/20",
+            "category": "InformationTechnology",
+            "typeOfEmployment": "part-time",
+            "jobLevel": "senior",
+            "capacity" : "20",
+            "applied" : "0",
+            "id": 2
         }
     ],
     "application": [
