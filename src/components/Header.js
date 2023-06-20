@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-
+import useFetch from "../customhooks/useFetch";
 const Header = ({ active }) => {
+const {data}=useFetch('http://localhost:8000/users');
+console.log(data)
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -56,13 +58,13 @@ const Header = ({ active }) => {
                       alt="" 
                       loading="lazy" />
                   </a>
-                  <ul className="dropdown-menu">
+                 <ul className="dropdown-menu">
                     <li><Link className="dropdown-item">Action</Link></li>
                     <li><Link className="dropdown-item">Another action</Link></li>
                     <li><hr className="dropdown-divider"/></li>
-                    <li><Link className="dropdown-item">Something else here</Link></li>
+                    <li><Link className="dropdown-item">logout</Link></li>
                   </ul>
-                </li>      
+                </li>
               }
               {sessionStorage.getItem("userActive") === "false" &&
                 <form className="d-flex" role="search">
