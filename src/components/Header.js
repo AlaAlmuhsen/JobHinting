@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import Home from "../pages/Home";
 
 
 const Header = ({ active }) => {
@@ -59,13 +58,13 @@ const Header = ({ active }) => {
                       alt="" 
                       loading="lazy" />
                   </a>
-                  <ul className="dropdown-menu">
+                 <ul className="dropdown-menu">
                     <li><Link className="dropdown-item">Action</Link></li>
                     <li><Link className="dropdown-item">Another action</Link></li>
                     <li><hr className="dropdown-divider"/></li>
                     <li><Link to="../pages/Home" className="dropdown-item" onClick={() => sessionStorage.setItem("userActive",false)}>Log out</Link></li>
                   </ul>
-                </li>      
+                </li>
               }
               {sessionStorage.getItem("userActive") === "false" &&
                 <form className="d-flex" role="search">

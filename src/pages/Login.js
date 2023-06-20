@@ -13,8 +13,6 @@ const Login = () => {
     const [inputPassword , setInputPassword] = useState('')
 
     const navigate = useNavigate();
-
-
     function handleInputEmail(e){
         setInputEmail(e.target.value);
     }
@@ -38,10 +36,8 @@ const Login = () => {
             <input type="submit" />
         </form>
     )
-
     function onSubmit(e){
         e.preventDefault();
-
         let userinfo = u.filter((userData) => {
             return inputEmail === userData.email && inputPassword === userData.password
         })
