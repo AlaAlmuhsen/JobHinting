@@ -6,6 +6,9 @@ const Login = () => {
     const {data : u } = useFetch('http://localhost:8000/users');
     const {data : c} = useFetch('http://localhost:8000/company');
 
+    // localStorage.setItem('userData' , '1');
+    // sessionStorage.setItem('userActive', false);
+
     const [inputEmail , setInputEmail] = useState('')
     const [inputPassword , setInputPassword] = useState('')
 
