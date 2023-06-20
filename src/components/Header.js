@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+// import Home from "../pages/Home";
 
 
 const Header = ({ active }) => {
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -46,11 +48,12 @@ const Header = ({ active }) => {
                 </Link>
               </li>
             </ul>
+            
             {sessionStorage.getItem("userActive") === "true" &&
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img 
-                      src='https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png' 
+                      src='https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png'
                       className="rounded-circle" 
                       height="22"
                       alt="" 
@@ -60,7 +63,7 @@ const Header = ({ active }) => {
                     <li><Link className="dropdown-item">Action</Link></li>
                     <li><Link className="dropdown-item">Another action</Link></li>
                     <li><hr className="dropdown-divider"/></li>
-                    <li><Link className="dropdown-item">Something else here</Link></li>
+                    <li><Link to="../pages/Home" className="dropdown-item" onClick={() => sessionStorage.setItem("userActive",false)}>Log out</Link></li>
                   </ul>
                 </li>      
               }
