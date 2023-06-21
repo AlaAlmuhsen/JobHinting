@@ -2,10 +2,17 @@ import { useState } from "react";
 import DashboardHeader from "../components/DashboardHeader";
 import AllAplications from "../components/AllAplications";
 import CompanyProfile from "../components/CompanyProfile";
+import { useNavigate } from "react-router-dom";
 const DashBoard = () => {
     const [activeItem , setActiveItem] = useState('item1');
+    const navigate=useNavigate(); 
+
     function handleItemClicked(item) {
         setActiveItem(item)
+    }
+    function logOutbtn() {
+        window.sessionStorage.clear();
+        navigate('/login');
     }
     return (
         <div className='dash-board'>
@@ -17,7 +24,7 @@ const DashBoard = () => {
                     <li className={activeItem === 'item3'? 'active':''} onClick={() => handleItemClicked('item3')}>Company Profile</li>
                     <li className={activeItem === 'item4'? 'active':''} onClick={() => handleItemClicked('item4')}>All Aplications</li>
                 </ul>
-                <button className="sign-out">Log Out</button>
+                <button className="sign-out" onClick={logOutbtn}>Log Out</button>
             </div>
             <div className="dash-board-body">
                 <DashboardHeader />
