@@ -29,7 +29,9 @@ color: #fff;
 font-weight: 600;
 font-size: 1.1rem;
 margin-left: 2rem;
-
+}
+#navbar .dropdown-menu{
+  background-color: var(--main-color);
 }
 #logo{
 font-family: 'Roboto Slab', serif;
@@ -232,6 +234,7 @@ font-family: 'Roboto Slab', serif;
   padding: 8px 10px;
   border-radius: 8px;
 }
+
 .img-logo-company{
   border-radius: 50%;
   width: 30%;
@@ -262,9 +265,7 @@ height: 30%;
 border: 1px solid rgba(128, 128, 128, 0.562);
 
 }
-.titel{
 
-}
 
 .img-tech-stack
 {
