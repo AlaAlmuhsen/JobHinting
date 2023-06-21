@@ -1,11 +1,13 @@
 import React from "react";
 
 const ApplicationsTable = ({ applications, companyData }) => {
+    
   return (
     <>
+    
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand">Total Applicants:19</a>
+          <p className="navbar-brand">Total Applicants:19</p>
           <form className="d-flex input-group w-auto">
             <input
               type="search"
@@ -62,11 +64,33 @@ const ApplicationsTable = ({ applications, companyData }) => {
                 <td>
                   <p className="fw-normal mb-1">{application.major}</p>
                 </td>
-                <td>
-                  <span className="badge bg-info text-dark rounded-pill d-inline">
-                    {application.status}
-                  </span>
-                </td>
+               
+To add the code snippet you provided to the existing code, you can modify the relevant section of your code as follows:
+
+jsx
+Copy code
+<td>
+  {(() => {
+    let badgeClass = "badge bg-info text-dark rounded-pill d-inline ";
+
+    if (application.status === "pending") {
+      badgeClass += "bg-danger";
+    } else if (application.status === "approved") {
+      badgeClass += "bg-success";
+    } else {
+      badgeClass += "bg-secondary";
+    }
+
+    return (
+      <span className={badgeClass}>
+        {application.status}
+      </span>
+    );
+    
+  })()}
+</td>
+                 
+                
                 <td>
                   <p className="text-muted mb-0">{application.timeOfApply}</p>
                 </td>
@@ -90,37 +114,3 @@ const ApplicationsTable = ({ applications, companyData }) => {
 };
 
 export default ApplicationsTable;
-
-{
-  /* 
-// <table>
-    //     <thead>
-    //         <tr>
-    //             <th>first</th>
-    //             <th>last</th>
-    //             <th>major</th>
-    //             <th>birthday</th>
-    //             <th>status</th>
-    //             <th>phonenumber</th>
-    //             <th>timeOfApply</th>
-    //         </tr>
-    //     </thead>
-    //     <thead>
-    //         {applications
-    //         .filter((application) => {
-    //             return application.companyid == companyData.id
-    //         })
-    //         .map((application) => (
-    //             <tr key={application.id}>
-    //                 <td>{application.firstname}</td>
-    //                 <td>{application.lastname}</td>
-    //                 <td>{application.major}</td>
-    //                 <td>{application.birthday}</td>
-    //                 <td>{application.status}</td>
-    //                 <td>{application.phonenumber}</td>
-    //                 <td>{application.timeOfApply }</td>
-    //             </tr>
-    //         ))}
-    //     </thead>
-    // </table> */
-}
