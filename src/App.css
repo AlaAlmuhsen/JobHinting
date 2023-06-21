@@ -261,9 +261,6 @@ height: 30%;
 border: 1px solid rgba(128, 128, 128, 0.562);
 
 }
-.titel{
-
-}
 
 .img-tech-stack
 {
@@ -318,3 +315,9 @@ padding: 0.5rem ;
 /* end Dashboard  */
 /* end Dashboard  */
 
+#home-content{
+height: 80vh;
+}
+#jobSearch{
+color:#fff
+}
