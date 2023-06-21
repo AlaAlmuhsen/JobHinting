@@ -25,6 +25,9 @@ return (
     <Col>
     <Link to={`/findjob/Business`}>Business</Link>
     </Col>
+    <Col>
+    <Link to={`/findjob/Meadical`}>Meadical</Link>
+    </Col>
   </Row>
   <Row>
     <Col>
@@ -36,6 +39,10 @@ return (
     <Col>
     <Link to={`/findjob/Accounting`}>Accounting</Link>
     </Col>
+    <Col>
+    <Link to={`/findjob/Teaching`}>Teaching</Link>
+    </Col>
+    
   </Row>
 </Container>
   <Footer/>

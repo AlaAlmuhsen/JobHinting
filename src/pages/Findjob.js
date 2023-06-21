@@ -4,7 +4,6 @@ import JobSearch from '../components/JobSearch';
 import jobSeeker from '../images/jobSeeker.png'
 import Footer from '../components/Footer';
 const Findjob = () => {
-
   return (
     <div className='find-job'>
       <Header active='find'/>
@@ -17,8 +16,10 @@ const Findjob = () => {
       <img src={jobSeeker} alt='job seeker' id='jobSeeker'/>
       </div>
       <div className='content'>
-        <div className="row m-0">
-          <div className="col-3 p-0"></div>
+        <div className="row m-0 g-5">
+          <div className="col-3 p-0 " id='filtersDiv'>
+
+          </div>
           <div className="col-9 p-0">
           <JobSearch/>
 

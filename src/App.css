@@ -244,27 +244,20 @@ font-family: 'Roboto Slab', serif;
 
 }
 .name-company{
-
   padding: 7px;
-  
 }
 .col-box{
-  margin-top: 2rem; 
-  
+  margin-top: 2rem;
 }
 .curical-icon{
-  margin-right: 5px;
-
+margin-right: 5px;
 border-radius: 50%;
 color: #42AFFF;
 font-size: 1.5rem;
 width: 13%;
 height: 40%;
 border: 1px solid rgba(128, 128, 128, 0.562);
-
 }
-
-
 .img-tech-stack
 {
   width: 80%;
@@ -322,11 +315,9 @@ padding: 0.5rem ;
 .input-group-table{
   width: 100%;
   padding: 1rem;
-
 }
 .nn{
   display: flex;
-  
 }
 .color-status-approved{
   background-color: rgb(125, 211, 181)  ;
@@ -336,10 +327,12 @@ padding: 0.5rem ;
 }
 /* end Dashboard  */
 /* end Dashboard  */
-
 #home-content{
 height: 80vh;
 }
 #jobSearch{
 color:#fff
+}
+#filtersDiv{
+background-color: #fff;
 }

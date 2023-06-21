@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link , useParams } from "react-router-dom";
 
 function JobSearch() {
   const [jobs, setJobs] = useState([]);
   const [isPending, setisPending] = useState(true);
   const [error, setError] = useState(null);
   const [inputValue, setInputValue] = useState("");
-
+  const {category} = useParams();
+  let filteredList=[];
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
       .then((res) => {
@@ -25,16 +26,13 @@ function JobSearch() {
         setisPending(false);
         setError(err.message);
       });
-  }, []);
-
-  function inputFunction(e) {
-    setInputValue(e.target.value);
-  }
-
-  const filteredList = jobs.filter((job) =>
-    job.title.toLowerCase().includes(inputValue.toLowerCase())
-  );
-
+    }, []);
+    function inputFunction(e) {
+      setInputValue(e.target.value);
+    }
+    category != null ?(
+      filteredList = jobs.filter((job) =>job.category === category))
+      :(filteredList = jobs.filter((job) =>job.title.toLowerCase().includes(inputValue.toLowerCase())) )
   return (
     <>
     <div className="AllJob">
@@ -46,6 +44,8 @@ function JobSearch() {
         id='inputField'
       />
     </div>
+    {/* {isPending&& {isPending}}
+    {error&& {error}} */}
       <Row>
         {filteredList.slice(0, 12).map((job) => (
           <Col key={job.id} md={6} className="h-100">
