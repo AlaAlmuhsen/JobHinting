@@ -10,7 +10,7 @@ const ApplicationsTable = ({ applications, companyData }) => {
     <>
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand">Total Applicants:{filteredApplication.length}</a>
+          <p className="navbar-brand">Total Applicants:{filteredApplication.length}</p>
           <form className="d-flex input-group w-auto">
             <input
               type="search"
