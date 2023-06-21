@@ -1,21 +1,24 @@
-import Button from 'react-bootstrap/Button';
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
-const JobsCards = ({jobs}) => {
+const JobsCards = ({ jobs }) => {
   return (
     <Row>
       {jobs.slice(0, 12).map((job) => (
-        <Col h-100 md={6} key={job.id}>
-          <Card id='card'>
+        <Col key={job.id} md={6} className="h-100">
+          <Card id="card">
             <Card.Body>
-              <Card.Title id='title-job'>{job.title}</Card.Title>
+              <Card.Title id="title-job">{job.title}</Card.Title>
               <Card.Text>{job.desc}</Card.Text>
-              {/* <Link to={`/Details/${jobs.id} } </Card.Body>` id='more'>Details</Link> */}
+              <Link to={`/jobdetails/${job.id}`} id='more'>
+                Details
+              </Link>
             </Card.Body>
           </Card>
-          <br></br>
+          <br />
         </Col>
       ))}
     </Row>
