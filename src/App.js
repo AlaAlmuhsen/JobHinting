@@ -12,13 +12,13 @@ function App() {
   window.sessionStorage.setItem("userActive",false)
   return (
     <Routes>
-      <Route path='/' element={<Home />}/>
+      <Route exact path='/' element={<Home />}/>
       <Route path='/findjob' element={<Findjob />}/>
+      <Route path='/findjob/:category' element={<Findjob />}/>
       <Route path='/browsecompanies' element={<Browsecompanies />}/>
       <Route path='/dashboard' element={<DashBoard />}/>
       <Route path='/login' element={<Login />}/>
     </Routes>
   );
 }
-
 export default App;
