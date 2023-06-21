@@ -343,3 +343,27 @@ height: 80vh;
 #jobSearch{
 color:#fff
 }
+
+/* start login */
+.login-btn {
+  padding-left: 2.5rem; 
+  padding-right: 2.5rem;
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+/* end login */
