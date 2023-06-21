@@ -12,7 +12,13 @@ const CompanyData = ({ company }) => {
             <img className="img-logo-company" src={company.logo} alt="j"/>
             <h3 className="name-company">{company.name}</h3>
           </div>
+<div className="nn">
 
+          <div className="col col-box">
+            <i className="fa-solid fa-location-dot curical-icon"></i>
+            Indusrty:
+            <p> {company.indusrty} </p>
+          </div>
           <div className="col col-box">
             <i className="fa-solid fa-location-dot curical-icon"></i>
             Indusrty:
@@ -30,6 +36,7 @@ const CompanyData = ({ company }) => {
           </div>
         </div>
       </div>
+</div>
       <hr />
 
       <div className="container text-start">

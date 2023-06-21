@@ -741,24 +741,44 @@
             "jobid" : "1",
             "firstname" : "alaa",
             "lastname" : "almohsen",
+            "email":"alaaalmohsen.com",
             "major" : "cis",
             "birthday" : "15/10/1998",
             "status" : "pending",
             "phonenumber" : "0777777777",
             "timeOfApply" : "19/6/2023",
+            "jobRole":"Full-stack",
+            "joblevel":"Junior",
             "id":"1"
+        },
+        {
+            "companyid": "1",
+            "jobid" : "3",
+            "firstname" : "ayham",
+            "lastname" : "zaid",
+            "major" : "sw",
+            "birthday" : "11/5/1995",
+            "status" : "approved",
+            "phonenumber" : "0777777777",
+            "timeOfApply" : "21/6/2023",
+            "jobRole":"Full-stack",
+            "joblevel":"Seinor",
+            "id":"2"
         },
         {
             "companyid": "2",
             "jobid" : "2",
             "firstname" : "Tasneem",
-            "lastname" : "Tasneem",
+            "lastname" : "shehadeh",
+            "email":"tasneem.Shehadeh.com",
             "major" : "CS",
             "birthday" : "22/4/2001",
             "status" : "pending",
             "phonenumber" : "0777777777",
             "timeOfApply" : "19/6/2023",
-            "id":"2"
+            "jobRole":"Full-stack",
+            "joblevel":"Junior",
+            "id":"3"
         }
     ]
 }

@@ -29,7 +29,9 @@ color: #fff;
 font-weight: 600;
 font-size: 1.1rem;
 margin-left: 2rem;
-
+}
+#navbar .dropdown-menu{
+  background-color: var(--main-color);
 }
 #logo{
 font-family: 'Roboto Slab', serif;
@@ -231,9 +233,10 @@ font-family: 'Roboto Slab', serif;
   padding: 8px 10px;
   border-radius: 8px;
 }
+
 .img-logo-company{
   border-radius: 50%;
-  width: 30%;
+  width: 5%;
 }
 
 .col-logo-name{
@@ -246,7 +249,6 @@ font-family: 'Roboto Slab', serif;
   
 }
 .col-box{
-padding: 1rem;
   margin-top: 2rem; 
   
 }
@@ -255,12 +257,13 @@ padding: 1rem;
 
 border-radius: 50%;
 color: #42AFFF;
-font-size: 1.2rem;
+font-size: 1.5rem;
 width: 13%;
-height: 30%;
+height: 40%;
 border: 1px solid rgba(128, 128, 128, 0.562);
 
 }
+
 
 .img-tech-stack
 {
@@ -311,6 +314,25 @@ padding: 0.5rem ;
 .icon-card-color{
   color: #dcdde0;
   padding: 0.5rem;
+}
+.img-user-table{
+  width: 45px;
+   height: 45px;
+}
+.input-group-table{
+  width: 100%;
+  padding: 1rem;
+
+}
+.nn{
+  display: flex;
+  
+}
+.color-status-approved{
+  background-color: rgb(125, 211, 181)  ;
+}
+.color-status-reject{
+  background-color: rgb(211, 122, 122)  ;
 }
 /* end Dashboard  */
 /* end Dashboard  */
