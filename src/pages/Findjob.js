@@ -4,8 +4,7 @@ import JobSearch from '../components/JobSearch';
 import jobSeeker from '../images/jobSeeker.png'
 import Footer from '../components/Footer';
 const Findjob = () => {
-  
-  // console.log(jobs)
+
   return (
     <div className='find-job'>
       <Header active='find'/>

@@ -9,8 +9,6 @@ const DashBoard = () => {
     function handleItemClicked(item) {
         setActiveItem(item)
     }
-
-    
     return (
         <div className='dash-board'>
             <div className='side-nav'>
