@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 
 const ApplicationsTable = ({ applications, companyData }) => {
+    const [searchQuery, setSearchQuery] = useState("");
+
+    const search = (event) => {
+        let query = event.target.value;
+        setSearchQuery(query);
+      };
     
   let filteredApplication = applications.filter((application) => {
-    return application.companyid == companyData.id;
+    return application.companyid == companyData.id &&
+    application.firstname
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
   })
 
-  
+
   return (
     <>
-    
-      <nav className="navbar navbar-light bg-light">
+     <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
-          <p className="navbar-brand">Total Applicants:19</p>
           <p className="navbar-brand">Total Applicants:{filteredApplication.length}</p>
           <form className="d-flex input-group w-auto">
             <input
@@ -21,7 +28,9 @@ const ApplicationsTable = ({ applications, companyData }) => {
               placeholder="Search"
               aria-label="Search"
               aria-describedby="search-addon"
+              onChange={search}
             />
+             
             <span className="input-group-text border-0" id="search-addon">
               <i className="fas fa-search"></i>
             </span>

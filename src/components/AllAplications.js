@@ -6,7 +6,7 @@ import ApplicationsTable from "./ApplicationsTable";
 
 const AllAplications = () => {
     let companyData = JSON.parse(localStorage.getItem('companyData'))[0]; 
-    const {data: applications , error , isPending} = useFetch('http://localhost:8000/application');
+    const {data: applications , error , isPending} = useFetch('http://localhost:5000/application');
 
     return (
         <>

@@ -8,7 +8,7 @@ const CompanyProfile = () => {
 
 
     let companyData = JSON.parse(localStorage.getItem('companyData'))[0]; 
-    const {data: company , error , isPending} = useFetch('http://localhost:8000/company/'+companyData.id);
+    const {data: company , error , isPending} = useFetch('http://localhost:5000/company/'+companyData.id);
   return (
     <>
       {isPending && <div>Loading ...</div>}
