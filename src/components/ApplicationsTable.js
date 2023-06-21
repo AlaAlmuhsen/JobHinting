@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ApplicationsTable = ({ applications, companyData }) => {
+  let filteredApplication = applications.filter((application) => {
+    return application.companyid == companyData.id;
+  })
+
+  
   return (
     <>
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand">Total Applicants:19</a>
+          <a className="navbar-brand">Total Applicants:{filteredApplication.length}</a>
           <form className="d-flex input-group w-auto">
             <input
               type="search"
@@ -23,27 +28,21 @@ const ApplicationsTable = ({ applications, companyData }) => {
           </form>
         </div>
       </nav>
-      {applications
-        .filter((application) => {
-          return application.companyid == companyData.id;
-        })
-        .map((application) => (
-          <table
-            className="table align-middle bg-light text-dark"
-            key={application.id}
-          >
-            <thead className="bg-light">
-              <tr>
-                <th>Name</th>
-                <th>Major</th>
-                <th>Hiring Status</th>
-                <th>Application Date</th>
-                <th>Position</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
+      <table className="table align-middle bg-light text-dark">
+        <thead className="bg-light">
+          <tr>
+            <th>Name</th>
+            <th>Major</th>
+            <th>Hiring Status</th>
+            <th>Application Date</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredApplication
+          .map((application) => (
+            <tr key={application.id}>
                 <td>
                   <div className="d-flex align-items-center">
                     <img
@@ -81,46 +80,12 @@ const ApplicationsTable = ({ applications, companyData }) => {
                   </button>
                 </td>
               </tr>
-             
-            </tbody>
-          </table>
-        ))}
+          ))
+          }
+        </tbody>
+      </table>
     </>
   );
 };
 
 export default ApplicationsTable;
-
-{
-  /* 
-// <table>
-    //     <thead>
-    //         <tr>
-    //             <th>first</th>
-    //             <th>last</th>
-    //             <th>major</th>
-    //             <th>birthday</th>
-    //             <th>status</th>
-    //             <th>phonenumber</th>
-    //             <th>timeOfApply</th>
-    //         </tr>
-    //     </thead>
-    //     <thead>
-    //         {applications
-    //         .filter((application) => {
-    //             return application.companyid == companyData.id
-    //         })
-    //         .map((application) => (
-    //             <tr key={application.id}>
-    //                 <td>{application.firstname}</td>
-    //                 <td>{application.lastname}</td>
-    //                 <td>{application.major}</td>
-    //                 <td>{application.birthday}</td>
-    //                 <td>{application.status}</td>
-    //                 <td>{application.phonenumber}</td>
-    //                 <td>{application.timeOfApply }</td>
-    //             </tr>
-    //         ))}
-    //     </thead>
-    // </table> */
-}
