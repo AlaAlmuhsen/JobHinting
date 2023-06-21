@@ -73,7 +73,7 @@ const ApplicationsTable = ({ applications, companyData }) => {
 
                 <td>
                   <p className="fw-normal mb-1">{application.jobRole}</p>
-                  <p className="text-muted mb-0">{application.Position}</p>
+                  <p className="text-muted mb-0">{application.joblevel}</p>
                 </td>
                 <td>
                   <button type="button" className="btn btn-primary me-3">

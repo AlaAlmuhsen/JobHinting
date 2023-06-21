@@ -9,12 +9,10 @@ const DashBoard = () => {
     function handleItemClicked(item) {
         setActiveItem(item)
     }
-
-    
     return (
         <div className='dash-board'>
             <div className='side-nav'>
-                <div className="logo">JubHunter</div>
+                <div className="logo">JobHunter</div>
                 <ul>
                     <li className={activeItem === 'item1'? 'active':''} onClick={() => handleItemClicked('item1')}>DashBoard</li>
                     <li className={activeItem === 'item2'? 'active':''} onClick={() => handleItemClicked('item2')}>Messages</li>

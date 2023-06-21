@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Header = ({ active }) => {
+  const Navigate=useNavigate(); 
   return (
     <header>
       <nav className="navbar navbar-expand-lg " id="navbar">
@@ -29,7 +31,7 @@ const Header = ({ active }) => {
                   )}
                   aria-current="page"
                   href="#"
-                
+
                 >
                   Find Jobs
                 </Link>
@@ -60,7 +62,12 @@ const Header = ({ active }) => {
                     <li><Link className="dropdown-item">Action</Link></li>
                     <li><Link className="dropdown-item">Another action</Link></li>
                     <li><hr className="dropdown-divider"/></li>
-                    <li><Link to="../pages/Home" className="dropdown-item" onClick={() => sessionStorage.setItem("userActive",false)}>Log out</Link></li>
+                    <li className="dropdown-item" onClick={() => {
+                      sessionStorage.setItem("userActive",false);
+                     Navigate('/');
+                     }}>
+                     Log out
+                     </li>
                   </ul>
                 </li>
               }

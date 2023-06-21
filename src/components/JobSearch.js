@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import JobsCards from "./JobsCards";
-
 function JobSearch() {
   const [data, setdata] = useState(null);
   const [isPending, setisPending] = useState(true);
@@ -64,5 +63,4 @@ function JobSearch() {
     </>
   );
 }
-
 export default JobSearch;

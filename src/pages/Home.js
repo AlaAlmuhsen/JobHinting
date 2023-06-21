@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import background from "../images/background.png";
+// import background from "../images/background.png";
 import back from "../images/back.jpg";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
     <img src={background}/>
 
 </section> */}
-            <img id="background" src={back} alt="background"/>
+            {/* <img id="background" src={back} alt="background"/> */}
             <div>Categories</div>
     <Container>
           <Row>
