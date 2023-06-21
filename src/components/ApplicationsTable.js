@@ -68,14 +68,14 @@ const ApplicationsTable = ({ applications, companyData }) => {
 
 <td>
   {(() => {
-    let badgeClass = "badge bg-info text-dark rounded-pill d-inline ";
+    let badgeClass = "badge  text-light rounded-pill d-inline ";
 
     if (application.status === "pending") {
-      badgeClass += "bg-danger";
+      badgeClass += "bg-info";
     } else if (application.status === "approved") {
-      badgeClass += "bg-success";
+      badgeClass += "color-status-approved";
     } else {
-      badgeClass += "bg-secondary";
+      badgeClass += "color-status-reject";
     }
 
     return (
