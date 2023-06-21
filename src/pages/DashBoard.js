@@ -2,9 +2,7 @@ import { useState } from "react";
 import DashboardHeader from "../components/DashboardHeader";
 import AllAplications from "../components/AllAplications";
 import CompanyProfile from "../components/CompanyProfile";
-
 const DashBoard = () => {
-
     const [activeItem , setActiveItem] = useState('item1');
     function handleItemClicked(item) {
         setActiveItem(item)
@@ -31,5 +29,4 @@ const DashBoard = () => {
         </div>
     )
 }
-
 export default DashBoard

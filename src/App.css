@@ -337,3 +337,9 @@ padding: 0.5rem ;
 /* end Dashboard  */
 /* end Dashboard  */
 
+#home-content{
+height: 80vh;
+}
+#jobSearch{
+color:#fff
+}
