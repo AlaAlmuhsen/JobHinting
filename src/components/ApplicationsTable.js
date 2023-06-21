@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ApplicationsTable = ({ applications, companyData }) => {
     
+  let filteredApplication = applications.filter((application) => {
+    return application.companyid == companyData.id;
+  })
+
+  
   return (
     <>
     
       <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
           <p className="navbar-brand">Total Applicants:19</p>
+          <p className="navbar-brand">Total Applicants:{filteredApplication.length}</p>
           <form className="d-flex input-group w-auto">
             <input
               type="search"
@@ -25,27 +31,21 @@ const ApplicationsTable = ({ applications, companyData }) => {
           </form>
         </div>
       </nav>
-      {applications
-        .filter((application) => {
-          return application.companyid == companyData.id;
-        })
-        .map((application) => (
-          <table
-            className="table align-middle bg-light text-dark"
-            key={application.id}
-          >
-            <thead className="bg-light">
-              <tr>
-                <th>Name</th>
-                <th>Major</th>
-                <th>Hiring Status</th>
-                <th>Application Date</th>
-                <th>Position</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
+      <table className="table align-middle bg-light text-dark">
+        <thead className="bg-light">
+          <tr>
+            <th>Name</th>
+            <th>Major</th>
+            <th>Hiring Status</th>
+            <th>Application Date</th>
+            <th>Position</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredApplication
+          .map((application) => (
+            <tr key={application.id}>
                 <td>
                   <div className="d-flex align-items-center">
                     <img
@@ -65,10 +65,7 @@ const ApplicationsTable = ({ applications, companyData }) => {
                   <p className="fw-normal mb-1">{application.major}</p>
                 </td>
                
-To add the code snippet you provided to the existing code, you can modify the relevant section of your code as follows:
 
-jsx
-Copy code
 <td>
   {(() => {
     let badgeClass = "badge bg-info text-dark rounded-pill d-inline ";
@@ -105,11 +102,12 @@ Copy code
                   </button>
                 </td>
               </tr>
-             
-            </tbody>
-          </table>
-        ))}
+          ))
+          }
+        </tbody>
+      </table>
     </>
+  
   );
 };
 

@@ -759,7 +759,7 @@
             "lastname" : "zaid",
             "major" : "sw",
             "birthday" : "11/5/1995",
-            "status" : "approved",
+            "status" : "pending",
             "phonenumber" : "0777777777",
             "timeOfApply" : "21/6/2023",
             "jobRole":"Full-stack",
