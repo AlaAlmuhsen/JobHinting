@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 
 const ApplicationsTable = ({ applications, companyData }) => {
+    const [searchQuery, setSearchQuery] = useState("");
+
+    const search = (event) => {
+        let query = event.target.value;
+        setSearchQuery(query);
+      };
+    
   let filteredApplication = applications.filter((application) => {
-    return application.companyid == companyData.id;
+    return application.companyid == companyData.id &&
+    application.firstname
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase());
   })
 
-  
+
   return (
     <>
-      <nav className="navbar navbar-light bg-light">
+     <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
           <p className="navbar-brand">Total Applicants:{filteredApplication.length}</p>
           <form className="d-flex input-group w-auto">
@@ -18,7 +28,9 @@ const ApplicationsTable = ({ applications, companyData }) => {
               placeholder="Search"
               aria-label="Search"
               aria-describedby="search-addon"
+              onChange={search}
             />
+             
             <span className="input-group-text border-0" id="search-addon">
               <i className="fas fa-search"></i>
             </span>
@@ -61,11 +73,30 @@ const ApplicationsTable = ({ applications, companyData }) => {
                 <td>
                   <p className="fw-normal mb-1">{application.major}</p>
                 </td>
-                <td>
-                  <span className="badge bg-info text-dark rounded-pill d-inline">
-                    {application.status}
-                  </span>
-                </td>
+               
+
+<td>
+  {(() => {
+    let badgeClass = "badge  text-light rounded-pill d-inline ";
+
+    if (application.status === "pending") {
+      badgeClass += "bg-info";
+    } else if (application.status === "approved") {
+      badgeClass += "color-status-approved";
+    } else {
+      badgeClass += "color-status-reject";
+    }
+
+    return (
+      <span className={badgeClass}>
+        {application.status}
+      </span>
+    );
+    
+  })()}
+</td>
+                 
+                
                 <td>
                   <p className="text-muted mb-0">{application.timeOfApply}</p>
                 </td>
@@ -85,6 +116,7 @@ const ApplicationsTable = ({ applications, companyData }) => {
         </tbody>
       </table>
     </>
+  
   );
 };
 

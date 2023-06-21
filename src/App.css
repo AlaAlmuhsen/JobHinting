@@ -328,6 +328,18 @@ padding: 0.5rem ;
   display: flex;
   
 }
+.color-status-approved{
+  background-color: rgb(125, 211, 181)  ;
+}
+.color-status-reject{
+  background-color: rgb(211, 122, 122)  ;
+}
 /* end Dashboard  */
 /* end Dashboard  */
 
+#home-content{
+height: 80vh;
+}
+#jobSearch{
+color:#fff
+}
