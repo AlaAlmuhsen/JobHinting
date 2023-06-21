@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-
 const Header = ({ active }) => {
-
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
+      <nav className="navbar navbar-expand-lg " id="navbar">
+        <div className="container nav-container mx-0">
+          <Link className="navbar-brand" to="/" id="logo">
             JobHuntly
           </Link>
           <button
@@ -22,9 +19,9 @@ const Header = ({ active }) => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+          <div className="collapse navbar-collapse g-5 listnav" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0" id="listItem">
+              <li className="nav-item" >
                 <Link
                   to="/findjob"
                   className={"nav-link ".concat(
@@ -32,8 +29,9 @@ const Header = ({ active }) => {
                   )}
                   aria-current="page"
                   href="#"
+                
                 >
-                  FindJobs
+                  Find Jobs
                 </Link>
               </li>
               <li className="nav-item">

@@ -1,22 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 :root {
-  --main-color :#4640DE  ;
-  --second-color :#42AFFF;
-  --third-color :#C9CBD5;
-  --fourth-color :#f8f8f2;
-  --fifth-color :#f8f8fd;
+  --main-color :#4B7079  ;
+  --second-color :#7997A2;
+  --third-color :#93B1B9;
+  --fourth-color :#93B1B9;
+  --fifth-color :#C3C7C6;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul , li {
   list-style: none !important;
 }
+/* start NavBar*/
+#navbar{
+background-color:var(--main-color) ;
+padding: .5rem 0 .5rem 5rem;
+}
+.listnav{
+margin-left: 6rem;
+}
+.listnav a{
+color: #fff;
+font-weight: 600;
+font-size: 1.1rem;
+margin-left: 2rem;
 
+}
+#logo{
+font-family: 'Roboto Slab', serif;
+color: var(--fifth-color);
+font-weight: 600;
+font-size: 2rem;
+}
+#listItem a{
+color: #ffffff;
+font-weight: 600;
+font-size: 1.1rem;
+margin-left: 2rem;
+}
+#nav-container{
+gap: 4rem;
+}
+/* end NavBar*/
+/*Footer start*/
+#footer{
+background-color:#4d6c73;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 6rem;
+padding: 1rem 4rem;
+}
+.logo{
+  font-family: 'Roboto Slab', serif;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2rem;
+}
+.socialMedia{
+display: flex;
+gap: 1rem;
+}
+.items-footer{
+font-size: 1.1rem;
+font-weight: 600;
+}
+.items-footer{
+color: #fff;
+}
+#list-footer{
+display: flex;
+align-items: end;
+gap: 2rem;
+}
+.CopyRight{
+color: #fff;
+}
+/*Footer End*/
 /*  Start Home */
 #background{
   width: 100%;
@@ -26,6 +92,76 @@ ul , li {
 /*  End Home */
 
 /*  Start FindJob */
+
+.content{
+background-color: var(--main-color);
+/* margin-bottom:4rem ; */
+}
+#more{
+background-color: var(--main-color);
+color: #fff;
+border: none;
+font-weight: 600;
+}
+.Jobs-body{
+padding: 2rem;
+}
+#card{
+height: 170px;
+}
+.content{
+padding: 1rem 5rem;
+}
+.AllJob{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem 5rem;
+}
+#inputField{
+width: 25rem;
+padding: .5rem;
+color: var(--main-color);
+font-weight: 600;
+border: none;
+border-radius:15px;
+}
+#inputField:focus{
+outline: 2px solid var(--fifth-color);
+}
+::placeholder{
+color: #4B7079;
+}
+#findJobJumbotron{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1rem 6rem;
+background-color: #ffffff;
+height: 500px;
+}
+#jobSeeker{
+height: 400px;
+}
+#p{
+font-size: 1.5rem;
+width: 60%;
+font-weight: 600;
+}
+#h1{
+color: var(--main-color);
+font-family: 'Roboto Slab', serif;
+font-weight: 600;
+}
+#title-of-card{
+color: #fff;
+font-family: 'Roboto Slab', serif;
+}
+#lets-start{ padding: .5rem; background-color: var(--main-color); border: none; color: #fff; font-size: 1.1rem; border-radius:10px ; -webkit-border-radius:10px ; -moz-border-radius:10px ; -ms-border-radius:10px ; -o-border-radius:10px ;
+}
+#title-job{
+font-family: 'Roboto Slab', serif;
+}
 /*  End FindJob */
 
 /*  Start Browse */
@@ -99,3 +235,4 @@ ul , li {
 }
 
 /* end Dashboard  */
+
