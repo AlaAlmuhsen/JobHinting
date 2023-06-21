@@ -12,7 +12,7 @@ const JobsCards = ({jobs}) => {
             <Card.Body>
               <Card.Title id='title-job'>{job.title}</Card.Title>
               <Card.Text>{job.desc}</Card.Text>
-              <Button id='more'>Details</Button>
+              {/* <Link to={`/Details/${jobs.id} } </Card.Body>` id='more'>Details</Link> */}
             </Card.Body>
           </Card>
           <br></br>
