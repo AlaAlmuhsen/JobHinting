@@ -63,7 +63,7 @@
             "email": "discord@discord.com",
             "password" : "discord123",
             "type":"company",
-            "logo": "url",
+            "logo": "https://jenchapmancreative.com/wp-content/uploads/2020/12/phoenix-logo-design-canyon.jpg",
             "id": 1
         },
         {
@@ -73,7 +73,7 @@
             "email": "Estarta@estarta.com",
             "password" : "Estarta123",
             "type":"company",
-            "logo": "url",
+            "logo": "https://jenchapmancreative.com/wp-content/uploads/2020/12/phoenix-logo-design-canyon.jpg",
             "id": 2
         }
     ],
