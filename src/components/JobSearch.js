@@ -9,6 +9,7 @@ function JobSearch() {
   const [inputValue, setInputValue] = useState("");
   const [filteredList, setFilteredList] = useState([]);
   const { category } = useParams();
+  const [checkboxValue, setcheckboxValue] = useState("");
 
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
@@ -41,9 +42,40 @@ function JobSearch() {
     );
     setFilteredList(searchResult);
   }
+// *********************************************************************************************************
+  // const handleCheckboxValue=(e)=>{
+  //   setcheckboxValue(e.target.value) 
+  //  } 
+
+  //  let FinalResultArray = jobs
+
+  //   useEffect(()=>{
+    
+  //   FinalResultArray = FinalResultArray.filter((job) =>job.typeOfEmployment === checkboxValue);
+   
+  //   FinalResultArray = FinalResultArray.filter((job) =>job.category === checkboxValue);
+
+  //   FinalResultArray = FinalResultArray.filter((job) =>job.jobLevel === checkboxValue);
+
+  //   },[checkboxValue]);
 
   return (
     <>
+     {/* <div>
+     <h6>Type of Employment</h6>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="Full-time" id="flexCheckDefault" onChange={handleCheckboxValue} />
+            <label className="form-check-label" for="flexCheckDefault">
+            Full-time
+            </label>
+          </div>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="Part-time" id="flexCheckChecked" onChange={getCheckboxValue}/>
+            <label className="form-check-label" for="flexCheckChecked">
+            Part-time
+            </label>
+          </div>
+    </div> */}
       <div className="AllJob">
         <h1 id="title-of-card">All Jobs</h1>
         <input
