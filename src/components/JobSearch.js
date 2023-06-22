@@ -8,6 +8,7 @@ function JobSearch() {
   const [error, setError] = useState(null);
   const [inputValue, setInputValue] = useState("");
   const {category} = useParams();
+
   let filteredList=[];
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
@@ -27,9 +28,11 @@ function JobSearch() {
         setError(err.message);
       });
     }, []);
+
     function inputFunction(e) {
       setInputValue(e.target.value);
     }
+    
     category != null ?(
       filteredList = jobs.filter((job) =>job.category === category))
       :(filteredList = jobs.filter((job) =>job.title.toLowerCase().includes(inputValue.toLowerCase())) )
