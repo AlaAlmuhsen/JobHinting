@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import DashBoard from './pages/DashBoard';
 import Login from './pages/Login';
 import JobDetails from './pages/JobDetails';
+import Applied from './pages/Applied';
 
 function App() {
   window.sessionStorage.setItem("userActive",false)
@@ -15,7 +16,7 @@ function App() {
     <Routes>
       <Route exact path='/' element={<Home />}/>
       <Route path='/findjob' element={<Findjob />}/>
-
+      <Route path='/Applied' element={<Applied/>}/>
       <Route path='/findjob/:category' element={<Findjob />}/>
       <Route path='/jobdetails/:id' element={<JobDetails />}/>
       <Route path='/browsecompanies' element={<Browsecompanies />}/>
