@@ -30,16 +30,16 @@ function JobSearch() {
   }, []);
 
   useEffect(() => {
-    let filteredList = category
-      ? jobs.filter((job) => job.category === category)
-      : jobs.filter((job) =>
-          job.title.toLowerCase().includes(inputValue.toLowerCase())
-        );
-    setFilteredList(filteredList);
-  }, [category, inputValue, jobs]);
+    let fetchResult =  jobs.filter((job) => job.category === category)
+    setFilteredList(fetchResult);
+  }, [jobs]);
 
   function inputFunction(e) {
     setInputValue(e.target.value);
+    let searchResult =  jobs.filter((job) =>
+    job.title.toLowerCase().includes(inputValue.toLowerCase())
+    );
+    setFilteredList(searchResult);
   }
 
   return (
