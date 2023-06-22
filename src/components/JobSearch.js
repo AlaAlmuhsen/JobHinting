@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
+
 function JobSearch() {
   const [jobs, setJobs] = useState([]);
   const [isPending, setIsPending] = useState(true);
@@ -8,7 +9,7 @@ function JobSearch() {
   const [inputValue, setInputValue] = useState("");
   const [filteredList, setFilteredList] = useState([]);
   const { category } = useParams();
-  // const history = useHistory();
+
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
       .then((res) => {
@@ -27,15 +28,12 @@ function JobSearch() {
         setError(err.message);
       });
   }, []);
-  useEffect(() => {
-    setInputValue(""); // Clear the search input whenever the category changes
-  }, [category]);
 
   useEffect(() => {
     let filteredList = category
       ? jobs.filter((job) => job.category === category)
       : jobs.filter((job) =>
-      job.title.toLowerCase().includes(inputValue.toLowerCase())
+          job.title.toLowerCase().includes(inputValue.toLowerCase())
         );
     setFilteredList(filteredList);
   }, [category, inputValue, jobs]);
@@ -43,6 +41,7 @@ function JobSearch() {
   function inputFunction(e) {
     setInputValue(e.target.value);
   }
+
   return (
     <>
       <div className="AllJob">
