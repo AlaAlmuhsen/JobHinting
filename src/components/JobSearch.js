@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
-import { Link , useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function JobSearch() {
   const [jobs, setJobs] = useState([]);
-  const [isPending, setisPending] = useState(true);
+  const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
   const [inputValue, setInputValue] = useState("");
-  const {category} = useParams();
+  const [filteredList, setFilteredList] = useState([]);
+  const { category } = useParams();
 
-  let filteredList=[];
   useEffect(() => {
     fetch("http://localhost:5000/jobs")
       .then((res) => {
@@ -18,37 +18,43 @@ function JobSearch() {
         }
         return res.json();
       })
-      .then((jobs) => {
-        setJobs(jobs);
-        setisPending(false);
+      .then((data) => {
+        setJobs(data);
+        setIsPending(false);
         setError(null);
       })
       .catch((err) => {
-        setisPending(false);
+        setIsPending(false);
         setError(err.message);
       });
-    }, []);
+  }, []);
 
-    function inputFunction(e) {
-      setInputValue(e.target.value);
-    }
-    
-    category != null ?(
-      filteredList = jobs.filter((job) =>job.category === category))
-      :(filteredList = jobs.filter((job) =>job.title.toLowerCase().includes(inputValue.toLowerCase())) )
+  useEffect(() => {
+    let filteredList = category
+      ? jobs.filter((job) => job.category === category)
+      : jobs.filter((job) =>
+          job.title.toLowerCase().includes(inputValue.toLowerCase())
+        );
+    setFilteredList(filteredList);
+  }, [category, inputValue, jobs]);
+
+  function inputFunction(e) {
+    setInputValue(e.target.value);
+  }
+
   return (
     <>
-    <div className="AllJob">
-    <h1 id="title-of-card">All Jobs</h1>
-      <input
-        placeholder="Enter the job search"
-        value={inputValue}
-        onInput={inputFunction}
-        id='inputField'
-      />
-    </div>
-    {/* {isPending&& {isPending}}
-    {error&& {error}} */}
+      <div className="AllJob">
+        <h1 id="title-of-card">All Jobs</h1>
+        <input
+          placeholder="Enter the job search"
+          value={inputValue}
+          onChange={inputFunction}
+          id="inputField"
+        />
+      </div>
+      {isPending && <p>Loading...</p>}
+      {error && <p>{error}</p>}
       <Row>
         {filteredList.slice(0, 12).map((job) => (
           <Col key={job.id} md={6} className="h-100">
