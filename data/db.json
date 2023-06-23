@@ -783,6 +783,20 @@
       "jobRole": "Full-stack",
       "joblevel": "Junior",
       "id": "3"
+    },
+    {
+      "companyid": "1",
+      "jobid": "2",
+      "firstname": "Majd",
+      "lastname": "Jadallha",
+      "major": "Software Developer",
+      "birthday": "2023-06-13",
+      "status": "pending",
+      "phoneNumber": "0774567890",
+      "timeOfApply": "06/23/2023",
+      "jobRole": "Full-time",
+      "JobLevel": "Senior",
+      "id": "nx_GIOb"
     }
   ]
 }
