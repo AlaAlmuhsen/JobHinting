@@ -785,26 +785,19 @@
       "id": "3"
     },
     {
+      "companyid": "3",
+      "jobid": "2",
       "firstname": "Majd",
       "lastname": "Jadallha",
-      "email": "majd@gmail.com",
-      "major": "20/12/1999",
-      "birthday": "engineering",
-      "JobLevel": "pending",
-      "phoneNumber": "civil-engineer",
-      "jobRole": "jounior",
-      "id": "UgLlSam"
-    },
-    {
-      "firstname": "omar",
-      "lastname": "Jadallha",
-      "email": "majd@gmail.com ",
-      "major": "29/12/199",
-      "birthday": "teacher",
-      "JobLevel": "sdlkj",
-      "phoneNumber": "sdfvg",
-      "jobRole": "zxcfv",
-      "id": "9NGGOGx"
+      "email": "email",
+      "major": "major",
+      "birthday": "2023-06-07",
+      "status": "status",
+      "phoneNumber": "0774567890",
+      "timeOfApply": "20/12/1999",
+      "jobRole": "jobRole",
+      "JobLevel": "JobLevel",
+      "id": "1Ef2xlU"
     }
   ]
 }
