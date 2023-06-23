@@ -325,6 +325,13 @@ padding: 0.5rem ;
 .color-status-reject{
   background-color: rgb(211, 122, 122)  ;
 }
+
+.content-dash-bord{
+  background-color: #eee;
+}
+.chart-B{
+  margin-right: 1rem;
+}
 /* end Dashboard  */
 /* end Dashboard  */
 #home-content{
