@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import background from "../images/background.png";
-import back from "../images/back.jpg";
 import Footer from '../components/Footer';
 
 const Home = () => {
@@ -42,9 +40,9 @@ return (
     <Col>
     <Link to={`/findjob/Teaching`}>Teaching</Link>
     </Col>
-    
   </Row>
 </Container>
+
   <Footer/>
 </div>
 )}

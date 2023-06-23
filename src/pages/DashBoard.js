@@ -4,6 +4,7 @@ import AllAplications from "../components/AllAplications";
 import CompanyProfile from "../components/CompanyProfile";
 import { useNavigate } from "react-router-dom";
 import PostJob from "./PostJob";
+import DashboardHome from "./DashboardHome";
 const DashBoard = () => {
     const [activeItem , setActiveItem] = useState('item1');
     const navigate=useNavigate(); 
@@ -29,7 +30,8 @@ const DashBoard = () => {
                 <button className="sign-out" onClick={logOutbtn}>Log Out</button>
             </div>
             <div className="dash-board-body">
-                {activeItem === 'item1' && <h1>home</h1>}
+                <DashboardHeader />
+                {activeItem === 'item1' && <DashboardHome />}
                 {activeItem === 'item2' && <h1>messages</h1>}
                 {activeItem === 'item3' && <CompanyProfile/>}
                 {activeItem === 'item4' && <AllAplications />}
