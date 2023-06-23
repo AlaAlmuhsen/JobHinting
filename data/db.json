@@ -717,7 +717,7 @@
     {
       "title": "History Teacher",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "companyId": 7,
+      "companyId": 1,
       "dateOfPost": "2023/09/15",
       "category": "Teaching",
       "typeOfEmployment": "Full-time",
@@ -783,21 +783,6 @@
       "jobRole": "Full-stack",
       "joblevel": "Junior",
       "id": "3"
-    },
-    {
-      "companyid": "3",
-      "jobid": "2",
-      "firstname": "Majd",
-      "lastname": "Jadallha",
-      "email": "email",
-      "major": "major",
-      "birthday": "2023-06-07",
-      "status": "status",
-      "phoneNumber": "0774567890",
-      "timeOfApply": "20/12/1999",
-      "jobRole": "jobRole",
-      "JobLevel": "JobLevel",
-      "id": "1Ef2xlU"
     }
   ]
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useFetch from "../customhooks/useFetch";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const Login = () => {
   const { data: u } = useFetch("http://localhost:5000/users");
   const { data: c } = useFetch("http://localhost:5000/company");
@@ -90,12 +90,12 @@ const Login = () => {
                                 </a>
                             </div>
                             <div className="text-center text-lg-start mt-4 pt-2">
-                                <button
+                                <Link to='/home'
                                     type="submit"
                                     className="btn  btn-lg login-btn"
                                 >
                                 Login
-                                </button>
+                                </Link>
                             </div>
                         </form>
                     </div>

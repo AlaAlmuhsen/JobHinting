@@ -367,3 +367,9 @@ height: 100%;
 }
 }
 /* end login */
+#companyId{
+width: 100px;
+}
+#contentAppliedPage{
+height: 100vh;
+}
