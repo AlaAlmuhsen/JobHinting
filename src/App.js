@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import DashBoard from './pages/DashBoard';
 import Login from './pages/Login';
 import JobDetails from './pages/JobDetails';
+import PostJob from './pages/PostJob';
 import Applied from './pages/Applied';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path='/jobdetails/:id' element={<JobDetails />}/>
       <Route path='/browsecompanies' element={<Browsecompanies />}/>
       <Route path='/dashboard' element={<DashBoard />}/>
+      <Route path='/dashboard/postjob' element={<PostJob />}/>
       <Route path='/login' element={<Login />}/>
     </Routes>
   );
