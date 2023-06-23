@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 const JobDetails = () => {
   const { id } = useParams();
@@ -45,7 +46,6 @@ const JobDetails = () => {
         setError(err.message);
       });
   }, [id]);
-
   return (
     <div >
     <Header/>
@@ -59,12 +59,11 @@ const JobDetails = () => {
           <p>{companyData.email}</p>
           <h2>{companyData.name}</h2>
           <p>{companyData.indusrty}</p>
-          {/* Display other company details */}
+          <Link to={'/Applied'}>Applied</Link>
         </div>
       )}
       <Footer/>
     </div>
   );
 };
-
 export default JobDetails;

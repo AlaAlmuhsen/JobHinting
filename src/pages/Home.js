@@ -45,6 +45,7 @@ return (
     
   </Row>
 </Container>
+
   <Footer/>
 </div>
 )}
