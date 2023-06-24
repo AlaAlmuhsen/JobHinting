@@ -62,6 +62,24 @@
       "type": "user",
       "avatar": "url",
       "id": "6"
+    },
+    {
+      "name": "MajdJadallha",
+      "password": "123456789",
+      "email": "Majd@gmail.com",
+      "jobTitle": "b",
+      "type": "user",
+      "avatar": "url",
+      "birthday": "2023-06-27",
+      "phonenumber": "0774567890",
+      "jobRole": "bb",
+      "Experience": "bbb",
+      "Location": "mm",
+      "Qualification": "bb",
+      "Education": "b",
+      "Skills": "b",
+      "Cv": "C:\\fakepath\\final3.jpg",
+      "id": "CUnIB7i"
     }
   ],
   "company": [
