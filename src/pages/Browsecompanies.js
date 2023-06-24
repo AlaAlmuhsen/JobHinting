@@ -5,7 +5,6 @@ const Browsecompanies = () => {
   return (
     <div className='browse'>
       <Header active='browse'/>
-      
     </div>
   )
 }

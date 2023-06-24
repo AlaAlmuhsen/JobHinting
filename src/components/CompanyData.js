@@ -5,231 +5,15 @@ import { Link } from "react-router-dom";
 const CompanyData = ({ company }) => {
   return (
     <>
-      {/* <div classNameName="container text-center">
-        <div classNameName="row">
-          <div classNameName="col col-logo-name">
-            <img classNameName="img-logo-company" src={company.logo} alt="j"/>
-            <h3 classNameName="name-company">{company.name}</h3>
-          </div>
-<div classNameName="nn">
-
-          <div classNameName="col col-box">
-            <i classNameName="fa-solid fa-location-dot curical-icon"></i>
-            Indusrty:
-            <p> {company.indusrty} </p>
-          </div>
-          <div classNameName="col col-box">
-            <i classNameName="fa-solid fa-location-dot curical-icon"></i>
-            Indusrty:
-            <p> {company.indusrty} </p>
-          </div>
-          <div classNameName="col col-box ">
-            <i className="fa-solid fa-industry curical-icon"></i>
-            Indusrty:
-            <p> {company.indusrty} </p>
-          </div>
-          <div className="col col-box">
-            <i className="fa-solid fa-people-group curical-icon "></i>
-            Indusrty:
-            <p> {company.indusrty} </p>
-          </div>
-        </div>
-      </div>
-</div>
-      <hr />
-
-      <div className="container text-start">
-        <div className="row">
-          <div className="col-7">
-            <h2>Company Profile</h2>
-            <p>
-              {company.desc}
-            </p>
-            <hr />
-            <h2>Contact</h2>
-            <div className="container text-start col-Contact ">
-              <div className="row py-2">
-                <div className="col-5 ">
-                  <button className="btn-Contact">
-                  <i className="fa-brands fa-twitter icon-Contact"></i>
-                  {company.ContactTwitter}
-                  </button>
-                </div>
-                <div className="col -5">
-                  <button className="btn-Contact">
-                  <i className="fa-brands fa-facebook icon-Contact"></i> 
-                  {company.ContactFacebook}
-
-                  </button>
-                </div>
-                <div className="row py-2 ">
-                  <div className="col -4">
-                    <button className="btn-Contact">
-                    <i className="fa-brands fa-instagram icon-Contact"></i>
-                      {company.ContactInstagram}
-                    </button>
-                  </div>
-                  <div className="col-7">
-                    <button className="btn-Contact">
-                    <i className="fa-brands fa-linkedin icon-Contact"></i>
-                    {company.ContactLinkedin}
-
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <h2>Working at {company.name}</h2>
-              <div className="container text-start col-Contact ">
-                <div className="row py-2">
-                  <div className="col-7 ">
-                    <img
-                      className="img-col-1"
-                      src="https://www.biospace.com/getasset/9c2883e8-16b0-4c5f-8e98-ba3560edeead/"
-                    />
-                  </div>
-                  <div className="col -5">
-                    <img
-                      className="img-col-2"
-                      src="https://web-static.wrike.com/blog/content/uploads/2016/11/Working-Effectively.jpg?av=d6fcc963c5c6f56257c39149bf1fd177"
-                    />
-
-                    <img
-                      className="img-col-2"
-                      src="https://assets.website-files.com/6320fabc41e0512485e11e03/632631404cf8f7ec9812df2e_happy-employees-1080x675.jpg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <h2>Team</h2>
-
-              <div className="row">
-                <div className="col">
-                  <div className="card team-card">
-                    <img
-                      className="card-img img-avatar"
-                      src="https://mercomp.pl/wp-content/uploads/2018/05/user-avatar-1.png"
-                      alt="..."
-                    />
-                    <div className="card-body">
-                      <h5 className="card-name">Noor Ahmad </h5>
-                      <h5 className="card-jobtitle">Full-stack </h5>
-                    </div>
-                    <div className="icon-card">
-                      <i className="fa-brands fa-linkedin icon-card-color"></i>
-
-                      <i className="fa-brands fa-whatsapp icon-card-color"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col">
-                  <div className="card team-card">
-                    <img
-                      className="card-img img-avatar"
-                      src="https://mercomp.pl/wp-content/uploads/2018/05/user-avatar-1.png"
-                      alt="..."
-                    />
-                    <div className="card-body">
-                      <h5 className="card-name">Noor Ahmad </h5>
-                      <h5 className="card-jobtitle">Full-stack </h5>
-                    </div>
-                    <div className="icon-card">
-                      <i className="fa-brands fa-linkedin icon-card-color"></i>
-
-                      <i className="fa-brands fa-whatsapp icon-card-color"></i>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col">
-                  <div className="card team-card">
-                    <img
-                      className="card-img img-avatar"
-                      src="https://mercomp.pl/wp-content/uploads/2018/05/user-avatar-1.png"
-                      alt="..."
-                    />
-                    <div className="card-body">
-                      <h5 className="card-name">Noor Ahmad </h5>
-                      <h5 className="card-jobtitle">Full-stack </h5>
-                    </div>
-                    <div className="icon-card">
-                      <i className="fa-brands fa-linkedin icon-card-color"></i>
-
-                      <i className="fa-brands fa-whatsapp icon-card-color"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-
-            </div>
-          </div>
-
-          <div className="col-3">
-            <h4>Tech Stack</h4>
-
-            <div className="container text-center ">
-              <div className="row row-cols-3 py-4">
-                <div className="col">
-                  <img
-                    className="img-tech-stack"
-                    src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className="img-tech-stack"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    className="img-tech-stack"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
-                  />
-                </div>
-
-                <br />
-
-                <div className="col">
-                  <img
-                    className="img-tech-stack"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
-                  />
-                </div>
-
-                <div className="col">
-                  <img
-                    className="img-tech-stack"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
-                  />
-                </div>
-
-                <div className="col">
-                  <img
-                    className="img-tech-stack"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
-                  />
-                </div>
-              </div>
-              <hr />
-              <h3>Office Locations</h3>
-            </div>
-          </div>
-        </div>
-      </div> */}
+   
       <main>
         <div className="container-fluid ">
           <div className="mb-3">
             <h1 className="h3 d-inline align-middle">Profile</h1>
-            <a
+            <Link
               className="badge bg-dark text-white ms-2"
-              href="upgrade-to-pro.html"
-            >
-             
-            </a>
+              to="upgrade-to-pro.html"
+            ></Link>
           </div>
           <div className="row">
             <div className="col-md-4 col-xl-3   ">
@@ -249,44 +33,44 @@ const CompanyData = ({ company }) => {
                   <br />
 
                   <div>
-                    <a className="btn btn-primary btn-sm mx-2" href="#">
+                    <Link className="btn btn-primary btn-sm mx-2" to="#">
                       Follow
-                    </a>
-                    <a className="btn btn-primary btn-sm" href="#">
+                  </Link>
+                    <Link className="btn btn-primary btn-sm" to="#">
                       <span data-feather="message-square"></span> Message
-                    </a>
+                  </Link>
                   </div>
                 </div>
                 <hr className="my-0" />
                 <div className="card-body">
                   <h5 className="h6 card-title">Skills</h5>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     HTML
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     JavaScript
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     Sass
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     Angular
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     Vue
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     React
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     Redux
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     UI
-                  </a>
-                  <a href="#" className="badge bg-primary me-1 my-1">
+                </Link>
+                  <Link to="#" className="badge bg-primary me-1 my-1">
                     UX
-                  </a>
+                </Link>
                 </div>
                 <hr className="my-0" />
                 <div className="card-body">
@@ -307,7 +91,6 @@ const CompanyData = ({ company }) => {
                       ></span>{" "}
                       Location: <span>{company.country}</span>
                     </li>
-                  
                   </ul>
                 </div>
                 <hr className="my-0" />
@@ -315,16 +98,16 @@ const CompanyData = ({ company }) => {
                   <h5 className="h6 card-title">Contact</h5>
                   <ul className="list-unstyled mb-0">
                     <li className="mb-1">
-                      <a href={company.ContactTwitter}>Twitter</a>
+                      <Link to={company.ContactTwitter}>Twitter</Link>
                     </li>
                     <li className="mb-1">
-                      <a href={company.ContactTwitter}>Facebook</a>
+                      <Link to={company.ContactTwitter}>Facebook</Link>
                     </li>
                     <li className="mb-1">
-                      <a href={company.ContactTwitter}>Instagram</a>
+                      <Link to={company.ContactTwitter}>Instagram</Link>
                     </li>
                     <li className="mb-1">
-                      <a href={company.ContactTwitter}>LinkedIn</a>
+                      <Link to={company.ContactTwitter}>LinkedIn</Link>
                     </li>
                   </ul>
                 </div>
@@ -339,42 +122,39 @@ const CompanyData = ({ company }) => {
                 <div className="card-body h-100">
                   <div className="d-flex align-items-start">
                     <div className="flex-grow-1">
-                      <hr/>
+                      <hr />
                       <strong>Company Profile</strong> <br />
-                      <hr/>
-
+                      <hr />
                       <small className="text-muted">{company.desc}</small>
-                                        
-
                       <br />
-                      
                     </div>
                   </div>
 
                   <div className="d-flex align-items-start">
                     <div className="flex-grow-1">
-                    <hr/>
-
+                      <hr />
                       <strong>Working {company.name}</strong> <br />
-                      <hr/>
-
+                      <hr />
                       <div className="container text-start col-Contact ">
                         <div className="row py-2">
                           <div className="col-7 ">
                             <img
                               className="img-col-1"
                               src="https://www.biospace.com/getasset/9c2883e8-16b0-4c5f-8e98-ba3560edeead/"
+                              alt=""
                             />
                           </div>
                           <div className="col -5">
                             <img
                               className="img-col-2"
                               src="https://web-static.wrike.com/blog/content/uploads/2016/11/Working-Effectively.jpg?av=d6fcc963c5c6f56257c39149bf1fd177"
+                              alt=""
                             />
 
                             <img
                               className="img-col-2"
                               src="https://assets.website-files.com/6320fabc41e0512485e11e03/632631404cf8f7ec9812df2e_happy-employees-1080x675.jpg"
+                              alt=""
                             />
                           </div>
                         </div>
@@ -400,14 +180,16 @@ const CompanyData = ({ company }) => {
                                 className="shadow-sm rounded-circle"
                                 height="130"
                                 width="130"
+                                alt=""
                               />
                             </div>
                             <div className="user-content">
                               <h5 className="text-capitalize user-name">
-                               Omar Talal
+                                Omar Talal
                               </h5>
-                              <p className=" text-capitalize text-muted small blockquote-footer"><br/>
-                              Front End
+                              <p className=" text-capitalize text-muted small blockquote-footer">
+                                <br />
+                                Front End
                               </p>
                               <div className="small">
                                 <i className="fas fa-star text-warning"></i>
@@ -415,7 +197,6 @@ const CompanyData = ({ company }) => {
                                 <i className="fas fa-star-half-alt text-warning"></i>
                                 <i className="fas fa-star text-light"></i>
                                 <i className="fas fa-star text-light"></i>
-
                               </div>
                               <p className="small text-muted mb-0">
                                 Lorem ipsum dolor sit amet consectetur
@@ -438,15 +219,16 @@ const CompanyData = ({ company }) => {
                                 className="shadow-sm rounded-circle"
                                 height="130"
                                 width="130"
+                                alt=""
                               />
                             </div>
                             <div className="user-content">
                               <h5 className="text-capitalize user-name">
                                 Ahmad Sami
                               </h5>
-                              <p className=" text-capitalize text-muted small blockquote-footer"><br/>
-                              Full Stack
-
+                              <p className=" text-capitalize text-muted small blockquote-footer">
+                                <br />
+                                Full Stack
                               </p>
                               <div className="small">
                                 <i className="fas fa-star text-warning"></i>
@@ -476,14 +258,16 @@ const CompanyData = ({ company }) => {
                                 className="shadow-sm rounded-circle"
                                 height="130"
                                 width="130"
+                                alt=""
                               />
                             </div>
                             <div className="user-content">
                               <h5 className="text-capitalize user-name">
                                 Noor Ali
                               </h5>
-                              <p className=" text-capitalize text-muted small blockquote-footer"><br/>
-                              Designer
+                              <p className=" text-capitalize text-muted small blockquote-footer">
+                                <br />
+                                Designer
                               </p>
                               <div className="small">
                                 <i className="fas fa-star text-warning"></i>
@@ -510,11 +294,10 @@ const CompanyData = ({ company }) => {
                   <hr />
 
                   <div className="d-flex align-items-start">
-                    
                     <div className="flex-grow-1">
-                      
-                      <strong>Our Service </strong> <br />
-                      <hr/>
+                      <strong>Our Service </strong> 
+                      <br />
+                      <hr />
                       <section className="section-services">
                         <div className="container">
                           <div className="row justify-content-center text-center">
@@ -524,21 +307,23 @@ const CompanyData = ({ company }) => {
                             <div className="col-md-6 col-lg-4">
                               <div className="single-service">
                                 <div className="part-1">
-                                <i class="fa-solid fa-mobile-screen-button"></i>                                  <h3 className="title">
-                                   App Development
-                                  </h3>
+                                  <i class="fa-solid fa-mobile-screen-button"></i>{" "}
+                                  <h3 className="title">App Development</h3>
                                 </div>
                                 <div className="part-2">
                                   <p className="description">
-                                  Our experienced mobile app developers craft innovative and feature-rich applications for iOS and Android platforms. We create intuitive user interfaces,
-                                   seamless user experiences, and scalable solutions We create intuitive user interfaces, 
-                                   that cater to your specific business requirements.
-
+                                    Our experienced mobile app developers craft
+                                    innovative and feature-rich applications for
+                                    iOS and Android platforms. We create
+                                    intuitive user interfaces, seamless user
+                                    experiences, and scalable solutions We
+                                    create intuitive user interfaces, that cater
+                                    to your specific business requirements.
                                   </p>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fas fa-arrow-circle-right"></i>
                                     Read More
-                                  </a>
+                                </Link>
                                 </div>
                               </div>
                             </div>
@@ -546,19 +331,23 @@ const CompanyData = ({ company }) => {
                             <div className="col-md-6 col-lg-4">
                               <div className="single-service">
                                 <div className="part-1">
-                                <i class="fa-solid fa-code"></i>                          
-                                 <h3 className="title">
-                                  Web Development
-                                  </h3>
+                                  <i class="fa-solid fa-code"></i>
+                                  <h3 className="title">Web Development</h3>
                                 </div>
                                 <div className="part-2">
                                   <p className="description">
-                                  We specialize in designing and developing custom websites that are visually stunning, user-friendly, and optimized for search engines. From simple informational sites to complex e-commerce platforms, we leverage the latest technologies to create a powerful online presence for  .
+                                    We specialize in designing and developing
+                                    custom websites that are visually stunning,
+                                    user-friendly, and optimized for search
+                                    engines. From simple informational sites to
+                                    complex e-commerce platforms, we leverage
+                                    the latest technologies to create a powerful
+                                    online presence for .
                                   </p>
-                                  <a href="#">
+                                  <Link to="#">
                                     <i className="fas fa-arrow-circle-right"></i>
                                     Read More
-                                  </a>
+                                </Link>
                                 </div>
                               </div>
                             </div>
@@ -566,17 +355,23 @@ const CompanyData = ({ company }) => {
                             <div className="col-md-6 col-lg-4">
                               <div className="single-service">
                                 <div className="part-1">
-                                <i class="fa-solid fa-cloud"></i>                                  <h3 className="title">
-                                  Cloud Computing
-                                  </h3>
+                                  <i class="fa-solid fa-cloud"></i>{" "}
+                                  <h3 className="title">Cloud Computing</h3>
                                 </div>
                                 <div className="part-2">
                                   <p className="description">
-                                  We offer cloud computing services that enable businesses to leverage the scalability, flexibility, and cost-effectiveness of cloud platforms. We assist with cloud migration, infrastructure setup, and ongoing management to optimize your operations and enhance data security.                                  </p>
-                                  <a href="#">
+                                    We offer cloud computing services that
+                                    enable businesses to leverage the
+                                    scalability, flexibility, and
+                                    cost-effectiveness of cloud platforms. We
+                                    assist with cloud migration, infrastructure
+                                    setup, and ongoing management to optimize
+                                    your operations and enhance data security.{" "}
+                                  </p>
+                                  <Link to="#">
                                     <i className="fas fa-arrow-circle-right"></i>
                                     Read More
-                                  </a>
+                                </Link>
                                 </div>
                               </div>
                             </div>
@@ -587,9 +382,9 @@ const CompanyData = ({ company }) => {
                   </div>
                 </div>
                 <hr />
-                </div>
-                </div>
-                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </>

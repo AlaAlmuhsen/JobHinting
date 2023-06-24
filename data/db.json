@@ -19,6 +19,15 @@
       "id": "2"
     },
     {
+      "name": "Majd",
+      "password": "123456789",
+      "email": "Majd@gmail.com",
+      "jobtitle": "Civil engineer",
+      "type": "user",
+      "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png",
+      "id": "2"
+    },
+    {
       "name": "Alaa",
       "password": "12345",
       "email": "all@gmail.com",
@@ -727,7 +736,7 @@
     {
       "title": "History Teacher",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "companyId": 7,
+      "companyId": 1,
       "dateOfPost": "2023/09/15",
       "category": "Teaching",
       "typeOfEmployment": "Full-time",
@@ -763,6 +772,10 @@
       "timeOfApply": "19/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Junior",
+      "Experience": "2 years",
+      "Location": "Ajloun",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "1"
     },
     {
@@ -770,6 +783,7 @@
       "jobid": "3",
       "firstname": "ayham",
       "lastname": "zaid",
+      "email": "Ayham@gmail.com",
       "major": "sw",
       "birthday": "11/5/1995",
       "status": "approved",
@@ -777,6 +791,10 @@
       "timeOfApply": "21/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Seinor",
+      "Experience": "2 years",
+      "Location": "Irbaid",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "2"
     },
     {
@@ -792,29 +810,11 @@
       "timeOfApply": "19/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Junior",
+      "Experience": "2 years",
+      "Location": "Amman",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "3"
-    },
-    {
-      "firstname": "Majd",
-      "lastname": "Jadallha",
-      "email": "majd@gmail.com",
-      "major": "20/12/1999",
-      "birthday": "engineering",
-      "JobLevel": "pending",
-      "phoneNumber": "civil-engineer",
-      "jobRole": "jounior",
-      "id": "UgLlSam"
-    },
-    {
-      "firstname": "omar",
-      "lastname": "Jadallha",
-      "email": "majd@gmail.com ",
-      "major": "29/12/199",
-      "birthday": "teacher",
-      "JobLevel": "sdlkj",
-      "phoneNumber": "sdfvg",
-      "jobRole": "zxcfv",
-      "id": "9NGGOGx"
     }
   ]
 }
