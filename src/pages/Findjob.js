@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import JobSearch from '../components/JobSearch';
 import jobSeeker from '../images/jobSeeker.png'
 import Footer from '../components/Footer';
-import Filters from '../components/Filters';
+// import Filters from '../components/Filters';
 const Findjob = () => {
 
   return (
