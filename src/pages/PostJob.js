@@ -1,5 +1,6 @@
 import { hasFormSubmit } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const PostJob = () => {
     const [title , setTitle] = useState('');
@@ -9,6 +10,10 @@ const PostJob = () => {
     const [capacity , setCapacity] = useState(1);
     const [dateOfPost , setDateOfPost] = useState(formatDate().split('-').join('/'));
     const [desc , setDesc] = useState('');
+    const [companyId , setCompanyId] = useState(JSON.parse(localStorage.getItem('companyData'))[0].id);
+    const navigate = useNavigate();
+
+
     return (
         <form className='post-job-form' onSubmit={onSubmit}>
             <h2>Post Job</h2>
@@ -98,13 +103,23 @@ const PostJob = () => {
     )
     function onSubmit(e){
         e.preventDefault();
-        // console.log(title);
-        // console.log(category);
-        // console.log(typeOfEmployment)
-        // console.log(jobLevel)
-        // console.log(capacity)
-        // console.log(dateOfPost)
-        console.log(desc)
+        console.log(category);
+        console.log(typeOfEmployment)
+        console.log(jobLevel)
+        console.log(capacity)
+        console.log(dateOfPost)
+
+        const job = {title , desc ,companyId , dateOfPost , category , typeOfEmployment , jobLevel ,capacity , applied: 0}
+
+        fetch('http://localhost:5000/jobs' , {
+            method: 'POST',
+            headers: { "Content-Type": 'application/json'},
+            body: JSON.stringify(job)
+        })
+        .then(() => {
+            console.log("new Job added");
+        })
+        navigate('/dashboard');
     }
     function padTo2Digits(num) {
         return num.toString().padStart(2, '0');
@@ -121,32 +136,4 @@ const PostJob = () => {
 export default PostJob
 
 
-// "title": "UI/Ux",
-//             "desc": "lorem lorem lorem lorem lorem",
-//             "companyId": 1,
-//             "dateOfPost": "2023/8/15",
-//             "category": "tec",
-//             "typeOfEmployment": "full-time",
-//             "jobLevel": "junior",
-//             "capacity" : "10",
-//             "applied" : "0",
-//             "id": 1
 
-// const handleSubmit = (e) => {
-//     e.preventDefault();
-//     const blog = {title, body , author};
-
-//     setIsPending(true)
-
-//     fetch('http://localhost:8000/blogs' , {
-//         method: 'POST',
-//         headers: { "Content-Type": 'application/json'},
-//         body: JSON.stringify(blog)
-//     })
-//     .then(() => {
-//         console.log("new blog added");
-//         setIsPending(false);
-//     })
-//     navigate('/');
-//     // navigate(-1);
-// }
