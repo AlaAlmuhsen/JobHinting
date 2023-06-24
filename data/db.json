@@ -19,6 +19,15 @@
       "id": "2"
     },
     {
+      "name": "Majd",
+      "password": "123456789",
+      "email": "Majd@gmail.com",
+      "jobtitle": "Civil engineer",
+      "type": "user",
+      "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png",
+      "id": "2"
+    },
+    {
       "name": "Alaa",
       "password": "12345",
       "email": "all@gmail.com",
@@ -753,6 +762,10 @@
       "timeOfApply": "19/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Junior",
+      "Experience": "2 years",
+      "Location": "Ajloun",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "1"
     },
     {
@@ -760,6 +773,7 @@
       "jobid": "3",
       "firstname": "ayham",
       "lastname": "zaid",
+      "email": "Ayham@gmail.com",
       "major": "sw",
       "birthday": "11/5/1995",
       "status": "approved",
@@ -767,6 +781,10 @@
       "timeOfApply": "21/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Seinor",
+      "Experience": "2 years",
+      "Location": "Irbaid",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "2"
     },
     {
@@ -782,21 +800,11 @@
       "timeOfApply": "19/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Junior",
+      "Experience": "2 years",
+      "Location": "Amman",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "3"
-    },
-    {
-      "companyid": "1",
-      "jobid": "2",
-      "firstname": "Majd",
-      "lastname": "Jadallha",
-      "major": "Software Developer",
-      "birthday": "2023-06-13",
-      "status": "pending",
-      "phoneNumber": "0774567890",
-      "timeOfApply": "06/23/2023",
-      "jobRole": "Full-time",
-      "JobLevel": "Senior",
-      "id": "nx_GIOb"
     }
   ]
 }

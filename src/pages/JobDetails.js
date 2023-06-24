@@ -56,10 +56,13 @@ const JobDetails = () => {
         <p>{jobData.desc}</p>
           <h1>{companyData.type}</h1>
           <p>{companyData.email}</p>
+          <p>{companyData.name}</p>
+          <p>{companyData.indusrty}</p>
+          <p>{companyData.country}</p>
           <img src={companyData.logo} alt='companyLogo' id='companyId'/>
           <h2>{companyData.name}</h2>
           <p>{companyData.indusrty}</p>
-          <Link to={`/Applied/${jobData.id}/${jobData.companyId}/${jobData.jobLevel}/${jobData.typeOfEmployment}/${jobData.title}`}>Applied</Link>
+          <Link to={`/Applied/${jobData.id}/${jobData.companyId}/${jobData.jobLevel}/${jobData.typeOfEmployment}/${jobData.title}/${companyData.name}`}>Applied</Link>
         </div>
       )}
       <Footer/>
