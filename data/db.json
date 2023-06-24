@@ -66,13 +66,18 @@
   ],
   "company": [
     {
-      "name": "discrd",
+      "name": "discord",
       "indusrty": "voice",
       "country": "usa",
       "email": "discord@discord.com",
       "password": "discord123",
       "type": "company",
+      "desc": "Company is a leading technology firm specializing in software development and digital solutions. With a dedicated team of skilled professionals and a track record of delivering innovative solutions, we help businesses thrive in the digital age.",
       "logo": "https://jenchapmancreative.com/wp-content/uploads/2020/12/phoenix-logo-design-canyon.jpg",
+      "ContactLinkedin": "https://www.linkedin.com/company/csdisco/",
+      "ContactInstagram": "https://www.instagram.com/csdisco/",
+      "ContactFacebook": "https://www.facebook.com/csdisco/",
+      "ContactTwitter": "https://twitter.com/csdisco",
       "id": 1
     },
     {
@@ -82,7 +87,12 @@
       "email": "Estarta@estarta.com",
       "password": "Estarta123",
       "type": "company",
+      "desc": "Company, our vision is to empower businesses with cutting-edge technology solutions that drive growth and success. We strive to be at the forefront of technological advancements and provide our clients with the tools they need to stay competitive in today's dynamic business landscape.",
       "logo": "https://jenchapmancreative.com/wp-content/uploads/2020/12/phoenix-logo-design-canyon.jpg",
+      "ContactLinkedin": "https://www.linkedin.com/company/estarta-solutions/",
+      "ContactInstagram": "https://www.instagram.com/estartasolutions/",
+      "ContactFacebook": "https://www.facebook.com/EstartaSolutions/",
+      "ContactTwitter": "https://twitter.com/Estarta",
       "id": 2
     }
   ],
@@ -746,6 +756,18 @@
       "capacity": "4",
       "applied": "0",
       "id": 55
+    },
+    {
+      "title": "job for test by alaa in Dashboard Please Don't Remove it :0",
+      "desc": "This Job Was Created By alaa For Testing",
+      "companyId": 1,
+      "dateOfPost": "2023/06/24",
+      "category": "Meadical",
+      "typeOfEmployment": "full-time",
+      "jobLevel": "Expert",
+      "capacity": "20",
+      "applied": 0,
+      "id": 56
     }
   ],
   "application": [
@@ -805,18 +827,6 @@
       "Qualification": "Becholer degree",
       "Cv": "url",
       "id": "3"
-    },
-    {
-      "firstname": "Majd",
-      "lastname": "Jadallha",
-      "email": "",
-      "birthday": "20/12",
-      "status": "pending",
-      "phonenumber": "0774567890",
-      "Experience": "no",
-      "Location": "amman",
-      "Qualification": "good",
-      "id": "O1JGPEi"
     }
   ]
 }

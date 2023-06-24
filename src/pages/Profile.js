@@ -1,31 +1,32 @@
 import React, { useState  } from 'react';
+import {Link, useHistory } from 'react-router-dom';
 // import { useParams } from 'react-router-dom';
 function Profile() {
-const [firstname, setFirstname] = useState('');
-const [lastname, setLastname] = useState('');
-const [jobTitle, setjobTitle] = useState('');
-const [birthday, setBirthday] = useState('');
-const [Status, setStatus] = useState('');
-const [Experience, setExperience] = useState('');
-const [phonenumber, setPhoneNumber] = useState('');
-const [Location, setLocation] = useState('');
-const [Qualification, setQualification] = useState('');
-const [Education, setEducation] = useState('');
-const [Skills, setSkills] = useState('');
-const [jobRole, setjobRole] = useState('');
-const [avatar, setAvatar] = useState('');
-const [Cv, setCv] = useState('');
+  const [firstname, setFirstname] = useState('');
+  const [lastname, setLastname] = useState('');
+  const [jobTitle, setjobTitle] = useState('');
+  const [birthday, setBirthday] = useState('');
+  const [Status, setStatus] = useState('');
+  const [Experience, setExperience] = useState('');
+  const [phonenumber, setPhoneNumber] = useState('');
+  const [Location, setLocation] = useState('');
+  const [Qualification, setQualification] = useState('');
+  const [Education, setEducation] = useState('');
+  const [Skills, setSkills] = useState('');
+  const [jobRole, setjobRole] = useState('');
+  const [Cv, setCv] = useState('');
 //   const { jobid, companyid, jobLevel, typeOfEmployment, title, name } = useParams();
+// let navigate=useNavigate();
 let userData = localStorage.getItem('userData');
 if (userData) {
-  userData = JSON.parse(userData);
+userData = JSON.parse(userData);
 }
     const handleSubmit = (e) => {
         e.preventDefault();
         const profileForm = {
           name: firstname+lastname,
-          password:userData[0].password,
-          email:userData[0].email,
+          password: userData[0].password,
+          email: userData[0].email,
           jobTitle,
           type: "user",
           avatar:"url",
@@ -39,7 +40,7 @@ if (userData) {
           Skills,
           Cv,
         };
-        localStorage.setItem('profileForm',JSON.stringify(profileForm));
+        localStorage.setItem('profileForm', JSON.stringify(profileForm));
         fetch('http://localhost:5000/users/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json'  },
@@ -55,9 +56,10 @@ if (userData) {
     <div id='profile'>
       <div className='row profile'>
         <div className='col-2' id='sidebar'>
-            sidebar
+            <img src='' alt='user Image'/>
+            <p>{firstname} {lastname}</p>
         </div>
-        <div className='col-10' id="formProfile">
+        <div className='col-10'>
             <form onSubmit={handleSubmit}>
                 <h2>Personal Information</h2>
                 <div className='row'>
@@ -78,7 +80,7 @@ if (userData) {
                     value={lastname}
                     onChange={(e)=>{setLastname(e.target.value)}}
                     />
-                </div>  
+                </div>
                 <div className="col-md-6 inputField">
                     <label>Location</label>
                     <input
@@ -99,14 +101,15 @@ if (userData) {
                 </div>
                 <div className="col-md-6 inputField">
                     <label>Status</label>
-                    <select
-                    id='status'
+                    <select 
+                    type="text"
                     required
                     value={Status}
-                    onChange={(e)=>{setStatus(e.target.value)}}>
+                    onChange={(e)=>{setStatus(e.target.value)}}
+                    >
                         <option>Single</option>
-                        <option>maried</option>
-                        </select>
+                        <option>Maried</option>
+                    </select>
                 </div>
                 <div className="col-md-6 inputField">
                     <label>phone Number</label>
@@ -125,7 +128,6 @@ if (userData) {
                 <br></br>
                 <br></br>
                 <br></br>
-    
                 <h2>Work Experince</h2>
                 <div className="col-md-6 inputField">
                     <label>Job title</label>
@@ -143,7 +145,6 @@ if (userData) {
                     required
                     value={jobRole}
                     onChange={(e)=>{setjobRole(e.target.value)}}
-
                     />
                 </div>
                 <div className="col-md-6 inputField">
@@ -194,13 +195,12 @@ if (userData) {
                 </div>
                 <br></br>
                 <br></br>
+                    {/* <Link to='/UpdateProfile'></Link> */}
                 <button type="submit" id='submit'>Submit</button>
-
             </form>
         </div>
       </div>
     </div>
   )
 }
-
 export default Profile

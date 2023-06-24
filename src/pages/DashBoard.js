@@ -30,7 +30,6 @@ const DashBoard = () => {
                 <button className="sign-out" onClick={logOutbtn}>Log Out</button>
             </div>
             <div className="dash-board-body">
-                <DashboardHeader />
                 {activeItem === 'item1' && <DashboardHome />}
                 {activeItem === 'item2' && <h1>messages</h1>}
                 {activeItem === 'item3' && <CompanyProfile/>}
