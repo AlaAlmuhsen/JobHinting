@@ -88,7 +88,7 @@
   ],
   "jobs": [
     {
-      "title": "UI/Ux",
+      "title": "UI-Ux",
       "desc": "lorem lorem lorem lorem lorem",
       "companyId": 1,
       "dateOfPost": "2023/8/15",
@@ -805,6 +805,18 @@
       "Qualification": "Becholer degree",
       "Cv": "url",
       "id": "3"
+    },
+    {
+      "firstname": "Majd",
+      "lastname": "Jadallha",
+      "email": "",
+      "birthday": "20/12",
+      "status": "pending",
+      "phonenumber": "0774567890",
+      "Experience": "no",
+      "Location": "amman",
+      "Qualification": "good",
+      "id": "O1JGPEi"
     }
   ]
 }

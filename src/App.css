@@ -467,3 +467,19 @@ background-color: var(--main-color); padding: 10px 15px; color: #fff; width: 6re
 padding: 1rem ;
 }
 }
+.profile{
+width: 100vw  ;
+}
+.profile #sidebar{
+background-color: #C3C7C6;
+}
+.inputField{
+display: flex;
+flex-direction: column;
+}
+#status{
+padding: 10px 15px;
+}
+#formProfile{
+padding: 1rem 9rem;
+}

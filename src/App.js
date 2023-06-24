@@ -10,6 +10,8 @@ import Login from './pages/Login';
 import JobDetails from './pages/JobDetails';
 import PostJob from './pages/PostJob';
 import Applied from './pages/Applied';
+import SignIn from './pages/SignIn';
+import Profile from './pages/Profile';
 
 function App() {
   window.sessionStorage.setItem("userActive",false)
@@ -20,6 +22,8 @@ function App() {
       <Route path='/Applied/:jobid/:companyid/:jobLevel/:typeOfEmployment/:title/:name' element={<Applied/>}/>
       <Route path='/findjob/:category' element={<Findjob />}/>
       <Route path='/jobdetails/:id' element={<JobDetails />}/>
+      <Route path='/SignUp' element={<SignIn />}/>
+      <Route path='//Profile' element={<Profile />}/>
       <Route path='/browsecompanies' element={<Browsecompanies />}/>
       <Route path='/dashboard' element={<DashBoard />}/>
       <Route path='/dashboard/postjob' element={<PostJob />}/>
