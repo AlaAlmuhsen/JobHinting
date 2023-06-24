@@ -17,30 +17,30 @@ const ApplicationsTable = ({ applications, companyData }) => {
 
   return (
     <>
-      <nav className="navbar navbar-light bg-light">
-        <div className="container-fluid">
-          <p className="navbar-brand">
-            Total Applicants:{filteredApplication.length}
-          </p>
-          <form className="d-flex input-group w-auto">
-            <input
-              type="search"
-              className="form-control rounded"
-              placeholder="Search"
-              aria-label="Search"
-              aria-describedby="search-addon"
-              onChange={search}
-            />
+        <nav className="navbar navbar-light bg-light">
+          <div className="container-fluid">
+            <p className="navbar-brand">
+              Total Applicants:{filteredApplication.length}
+            </p>
+            <form className="d-flex input-group w-auto">
+              <input
+                type="search"
+                className="form-control rounded"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="search-addon"
+                onChange={search}
+              />
 
-            <span className="input-group-text border-0" id="search-addon">
-              <i className="fas fa-search"></i>
-            </span>
-            <button type="button" className="btn btn-primary me-3">
-              Filter
-            </button>
-          </form>
-        </div>
-      </nav>
+              <span className="input-group-text border-0" id="search-addon">
+                <i className="fas fa-search"></i>
+              </span>
+              <button type="button" className="btn btn-primary me-3">
+                Filter
+              </button>
+            </form>
+          </div>
+        </nav>
       <table className="table align-middle bg-light text-dark">
         <thead className="bg-light">
           <tr>
