@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const DashboardHeader = () => {
     return (
@@ -7,7 +8,7 @@ const DashboardHeader = () => {
                 Nomad
             </div>
             <div className="btn-postjob">
-                <a href='#'>Post a Job</a>
+                <Link to='/dashboard/postjob'>Post a Job</Link>
             </div>
         </div>
     )

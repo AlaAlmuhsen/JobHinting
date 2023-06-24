@@ -90,7 +90,7 @@ const Login = () => {
                                 </a>
                             </div>
                             <div className="text-center text-lg-start mt-4 pt-2">
-                                <button
+                                <button 
                                     type="submit"
                                     className="btn  btn-lg login-btn"
                                 >

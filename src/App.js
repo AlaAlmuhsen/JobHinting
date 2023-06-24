@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import DashBoard from './pages/DashBoard';
 import Login from './pages/Login';
 import JobDetails from './pages/JobDetails';
+import PostJob from './pages/PostJob';
 import Applied from './pages/Applied';
 
 function App() {
@@ -16,11 +17,12 @@ function App() {
     <Routes>
       <Route exact path='/' element={<Home />}/>
       <Route path='/findjob' element={<Findjob />}/>
-      <Route path='/Applied' element={<Applied/>}/>
+      <Route path='/Applied/:jobid/:companyid/:jobLevel/:typeOfEmployment/:title/:name' element={<Applied/>}/>
       <Route path='/findjob/:category' element={<Findjob />}/>
       <Route path='/jobdetails/:id' element={<JobDetails />}/>
       <Route path='/browsecompanies' element={<Browsecompanies />}/>
       <Route path='/dashboard' element={<DashBoard />}/>
+      <Route path='/dashboard/postjob' element={<PostJob />}/>
       <Route path='/login' element={<Login />}/>
     </Routes>
   );

@@ -19,6 +19,15 @@
       "id": "2"
     },
     {
+      "name": "Majd",
+      "password": "123456789",
+      "email": "Majd@gmail.com",
+      "jobtitle": "Civil engineer",
+      "type": "user",
+      "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png",
+      "id": "2"
+    },
+    {
       "name": "Alaa",
       "password": "12345",
       "email": "all@gmail.com",
@@ -57,13 +66,18 @@
   ],
   "company": [
     {
-      "name": "discrd",
+      "name": "discord",
       "indusrty": "voice",
       "country": "usa",
       "email": "discord@discord.com",
       "password": "discord123",
       "type": "company",
+      "desc":"Company is a leading technology firm specializing in software development and digital solutions. With a dedicated team of skilled professionals and a track record of delivering innovative solutions, we help businesses thrive in the digital age.",
       "logo": "https://jenchapmancreative.com/wp-content/uploads/2020/12/phoenix-logo-design-canyon.jpg",
+      "ContactLinkedin":"https://www.linkedin.com/company/csdisco/",
+      "ContactInstagram":"https://www.instagram.com/csdisco/",
+      "ContactFacebook":"https://www.facebook.com/csdisco/",
+      "ContactTwitter":"https://twitter.com/csdisco",
       "id": 1
     },
     {
@@ -73,7 +87,12 @@
       "email": "Estarta@estarta.com",
       "password": "Estarta123",
       "type": "company",
+      "desc":"Company, our vision is to empower businesses with cutting-edge technology solutions that drive growth and success. We strive to be at the forefront of technological advancements and provide our clients with the tools they need to stay competitive in today's dynamic business landscape.",
       "logo": "https://jenchapmancreative.com/wp-content/uploads/2020/12/phoenix-logo-design-canyon.jpg",
+      "ContactLinkedin":"https://www.linkedin.com/company/estarta-solutions/",
+      "ContactInstagram":"https://www.instagram.com/estartasolutions/",
+      "ContactFacebook":"https://www.facebook.com/EstartaSolutions/",
+      "ContactTwitter":"https://twitter.com/Estarta",
       "id": 2
     }
   ],
@@ -717,7 +736,7 @@
     {
       "title": "History Teacher",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "companyId": 7,
+      "companyId": 1,
       "dateOfPost": "2023/09/15",
       "category": "Teaching",
       "typeOfEmployment": "Full-time",
@@ -737,6 +756,18 @@
       "capacity": "4",
       "applied": "0",
       "id": 55
+    },
+    {
+      "title": "job for test by alaa in Dashboard Please Don't Remove it :0",
+      "desc": "This Job Was Created By alaa For Testing",
+      "companyId": 1,
+      "dateOfPost": "2023/06/24",
+      "category": "Meadical",
+      "typeOfEmployment": "full-time",
+      "jobLevel": "Expert",
+      "capacity": "20",
+      "applied": 0,
+      "id": 56
     }
   ],
   "application": [
@@ -753,6 +784,10 @@
       "timeOfApply": "19/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Junior",
+      "Experience": "2 years",
+      "Location": "Ajloun",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "1"
     },
     {
@@ -760,6 +795,7 @@
       "jobid": "3",
       "firstname": "ayham",
       "lastname": "zaid",
+      "email": "Ayham@gmail.com",
       "major": "sw",
       "birthday": "11/5/1995",
       "status": "approved",
@@ -767,6 +803,10 @@
       "timeOfApply": "21/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Seinor",
+      "Experience": "2 years",
+      "Location": "Irbaid",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "2"
     },
     {
@@ -782,29 +822,11 @@
       "timeOfApply": "19/6/2023",
       "jobRole": "Full-stack",
       "joblevel": "Junior",
+      "Experience": "2 years",
+      "Location": "Amman",
+      "Qualification": "Becholer degree",
+      "Cv": "url",
       "id": "3"
-    },
-    {
-      "firstname": "Majd",
-      "lastname": "Jadallha",
-      "email": "majd@gmail.com",
-      "major": "20/12/1999",
-      "birthday": "engineering",
-      "JobLevel": "pending",
-      "phoneNumber": "civil-engineer",
-      "jobRole": "jounior",
-      "id": "UgLlSam"
-    },
-    {
-      "firstname": "omar",
-      "lastname": "Jadallha",
-      "email": "majd@gmail.com ",
-      "major": "29/12/199",
-      "birthday": "teacher",
-      "JobLevel": "sdlkj",
-      "phoneNumber": "sdfvg",
-      "jobRole": "zxcfv",
-      "id": "9NGGOGx"
     }
   ]
 }
