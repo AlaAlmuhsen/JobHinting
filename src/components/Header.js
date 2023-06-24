@@ -89,7 +89,7 @@ const Header = ({ active }) => {
                   <Link to="/Login" className="btn" type="submit">
                     Login
                   </Link>
-                  <Link className="btn" type="submit">
+                  <Link to='/SignUp' className="btn" type="submit">
                     Sign Up
                   </Link>
                 </form>
