@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Calendar from "react-calendar";
 import ChartA from "../components/ChartA";
 import ChartB from "../components/ChartB";
+import 'react-calendar/dist/Calendar.css';
+import Map from "./Map";
+
 
 
 const DashboardHome = () => {
+  const [value, onChange] = useState(new Date());
+
+
+
   return (
-   
-    <main >
-    <div className="container-fluid ">
+  
+<main >  
+  <div className="container-fluid ">
 
       <h1 className="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
 
@@ -21,18 +28,21 @@ const DashboardHome = () => {
                   <div className="card-body">
                     <div className="row">
                       <div className="col mt-0">
-                        <h5 className="card-title">Sales</h5>
+                        <h5 className="card-title">Review</h5>
                       </div>
 
                       <div className="col-auto">
                         <div className="stat text-primary">
-                          <i className="align-middle" data-feather="truck"></i>
+                          <i className=" fa-solid fa-book-open align-middle svg" data-feather="truck"></i>
+                         
                         </div>
                       </div>
                     </div>
-                    <h1 className="mt-1 mb-3">2.382</h1>
+                    <h1 className="mt-1 mb-3">79</h1>
                     <div className="mb-0">
-                      <span className="text-danger"> <i className="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+                      <span className="text-danger"> 
+                      <i className="mdi mdi-arrow-bottom-right fa-solid fa-arrow-down"></i> -3.65% </span>
+                      
                       <span className="text-muted">Since last week</span>
                     </div>
                   </div>
@@ -46,13 +56,15 @@ const DashboardHome = () => {
 
                       <div className="col-auto">
                         <div className="stat text-primary">
-                          <i className="align-middle" data-feather="users"></i>
+                          <i className="fa-solid fa-users svg " data-feather="users"></i>
+                        
                         </div>
                       </div>
                     </div>
                     <h1 className="mt-1 mb-3">14.212</h1>
                     <div className="mb-0">
-                      <span className="text-success"> <i className="mdi mdi-arrow-bottom-right"></i> 5.25% </span>
+                      <span className="text-success">
+                         <i className="mdi mdi-arrow-bottom-right fa-solid fa-arrow-up "></i> 5.25% </span>
                       <span className="text-muted">Since last week</span>
                     </div>
                   </div>
@@ -63,38 +75,43 @@ const DashboardHome = () => {
                   <div className="card-body">
                     <div className="row">
                       <div className="col mt-0">
-                        <h5 className="card-title">Earnings</h5>
+                        <h5 className="card-title">schedule</h5>
                       </div>
 
                       <div className="col-auto">
                         <div className="stat text-primary">
-                          <i className="align-middle" data-feather="dollar-sign"></i>
+                          <i className=" fa-solid fa-calendar-minus align-middle svg" data-feather="dollar-sign"></i>
+                         
                         </div>
                       </div>
                     </div>
-                    <h1 className="mt-1 mb-3">$21.300</h1>
+                    <h1 className="mt-1 mb-3">3</h1>
                     <div className="mb-0">
-                      <span className="text-success"> <i className="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
+                      <span className="text-success">
+                        <i className="mdi mdi-arrow-bottom-right fa-solid fa-arrow-up"></i> 6.65% </span>
                       <span className="text-muted">Since last week</span>
                     </div>
                   </div>
                 </div>
+                
                 <div className="card">
                   <div className="card-body">
                     <div className="row">
                       <div className="col mt-0">
-                        <h5 className="card-title">Orders</h5>
+                        <h5 className="card-title">Message</h5>
                       </div>
 
                       <div className="col-auto">
                         <div className="stat text-primary">
-                          <i className="align-middle" data-feather="shopping-cart"></i>
+                          <i className="align-middle fa-regular fa-message svg" data-feather="shopping-cart"></i>
+                          
                         </div>
                       </div>
                     </div>
-                    <h1 className="mt-1 mb-3">64</h1>
+                    <h1 className="mt-1 mb-3">24</h1>
                     <div className="mb-0">
-                      <span className="text-danger"> <i className="mdi mdi-arrow-bottom-right"></i> -2.25% </span>
+                      <span className="text-danger"> 
+                      <i className="mdi mdi-arrow-bottom-righ fa-solid fa-arrow-down"></i> -2.25% </span>
                       <span className="text-muted">Since last week</span>
                     </div>
                   </div>
@@ -119,68 +136,20 @@ const DashboardHome = () => {
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
+      <hr/>
+      <div className="col-12 col-lg-8 col-xxl-9 d-flex">
           <div className="card flex-fill w-100">
             <div className="card-header">
 
-              <h5 className="card-title mb-0">Browser Usage</h5>
-            </div>
-            <div className="card-body d-flex">
-              <div className="align-self-center w-100">
-                <div className="py-3">
-                  <div className="chart chart-xs">
-                    <canvas id="chartjs-dashboard-pie"></canvas>
-                  </div>
-                </div>
-
-                <table className="table mb-0">
-                  <tbody>
-                    <tr>
-                      <td>Chrome</td>
-                      <td className="text-end">4306</td>
-                    </tr>
-                    <tr>
-                      <td>Firefox</td>
-                      <td className="text-end">3801</td>
-                    </tr>
-                    <tr>
-                      <td>IE</td>
-                      <td className="text-end">1689</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
-          <div className="card flex-fill w-100">
-            <div className="card-header">
-
-              <h5 className="card-title mb-0">Real-Time</h5>
+              <h5 className="card-title mb-0">Applicants Summary</h5>
             </div>
             <div className="card-body px-4">
-              <div id="world_map"></div>
+<ChartB/>
             </div>
           </div>
         </div>
-        <div className="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
-          <div className="card flex-fill">
-            <div className="card-header">
-
-              <h5 className="card-title mb-0">Calendar</h5>
-            </div>
-            <div className="card-body d-flex">
-              <div className="align-self-center w-100">
-                <div className="chart">
-                  <div ><Calendar /></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+       </div>
+       <hr/>
 
       <div className="row">
         <div className="col-12 col-lg-8 col-xxl-9 d-flex">
@@ -260,25 +229,26 @@ const DashboardHome = () => {
             </table>
           </div>
         </div>
-        <div className="col-12 col-lg-4 col-xxl-3 d-flex">
-          <div className="card flex-fill w-100">
+        <div className="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
+          <div className="card flex-fill">
             <div className="card-header">
 
-              <h5 className="card-title mb-0">Monthly Sales</h5>
+              <h5 className="card-title mb-0">Calendar</h5>
             </div>
-           
-              <div className="align-self-center chart chart-lg ">
-              
-                <ChartB/>
-             
+            <div className="card-body d-flex">
+              <div className="align-self-center w-100">
+                <div className="chart">
+                  <div >      <Calendar onChange={onChange} value={value} />
+</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-    </div>
+    
   </main>
-  );
-};
 
+  )}
+  
 export default DashboardHome;
