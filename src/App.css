@@ -517,45 +517,20 @@ color: var(--main-color);
 font-weight: bold;
 text-transform: capitalize;
 }
-.input-box{
-display: flex;
-flex-direction: column;
-}
-label{
-margin-bottom: 10px;
-font-size: 1.2rem;
-font-weight: 600;
-color: var(--main-color);
-}
-.AppliedPage input{
-  border-radius: 15px;
-}
-input{
-padding: 10px 15px;
-}
-#submit{ border: none;
-font-weight: 600;
-margin-left: 43%;
-background-color: var(--main-color); padding: 10px 15px; color: #fff; width: 6rem; border-radius: 15px; -web5pxkit-border-radius: 1; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; -webkit-border-radius: 15px;
-}
 @media (max-width: 450px) {
 #appliedForm{
 padding: 1rem ;
 }
 }
-.profile{
-width: 100vw  ;
-}
-.profile #sidebar{
-background-color: #C3C7C6;
-}
-.inputField{
-display: flex;
-flex-direction: column;
-}
-#status{
-padding: 10px 15px;
-}
-#formProfile{
-padding: 1rem 9rem;
-}
+
+/*start Profile*/
+/*End Profile*/
+
+/*start FindJob*/
+/*End FindJob*/
+
+/*start Applied*/
+/*End Applied*/
+
+/*start Details*/
+/*End Details*/
