@@ -9,12 +9,21 @@ const DashboardHome = () => {
   const [value, onChange] = useState(new Date());
 
   return (
-    <main>
-      <div className="container-fluid ">
-        <h1 className="h3 mb-3">
+    <>
+     <nav className="navbar navbar-light bg-light">
+          <div className="container-fluid">
+          <h1 className="h3 mb-3">
           <strong>Analytics</strong> Dashboard
         </h1>
-
+              <span className="input-group-text border-0" id="search-addon">
+          </span>
+              
+          </div>
+        </nav>
+        <br/>
+    <main>
+      <div className="container-fluid ">
+        
         <div className="row">
           <div className="col-xl-6 col-xxl-5 d-flex">
             <div className="w-100">
@@ -273,6 +282,7 @@ const DashboardHome = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 

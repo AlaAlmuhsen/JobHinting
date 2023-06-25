@@ -6,70 +6,6 @@
       "email": "alaa@gmail.com",
       "jobtitle": "full-stack",
       "type": "user",
-      "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png",
-      "id": "1"
-    },
-    {
-      "name": "Tasneem",
-      "password": "123456789",
-      "email": "tasneem@gmail.com",
-      "jobtitle": "full-stack",
-      "type": "user",
-      "avatar": "url",
-      "id": "2"
-    },
-    {
-      "name": "Majd",
-      "password": "123456789",
-      "email": "Majd@gmail.com",
-      "jobtitle": "Civil engineer",
-      "type": "user",
-      "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png",
-      "id": "2"
-    },
-    {
-      "name": "Alaa",
-      "password": "12345",
-      "email": "all@gmail.com",
-      "jobtitle": "Front-end",
-      "type": "user",
-      "avatar": "url",
-      "id": "3"
-    },
-    {
-      "name": "sara",
-      "password": "123456789",
-      "email": "sara@gmail.com",
-      "jobtitle": "Back-end",
-      "type": "user",
-      "avatar": "url",
-      "id": "4"
-    },
-    {
-      "name": "Noor",
-      "password": "12345",
-      "email": "noor@gmail.com",
-      "jobtitle": "full-stack",
-      "type": "user",
-      "avatar": "url",
-      "id": "5"
-    },
-    {
-      "name": "Omar",
-      "password": "12345",
-      "email": "omar@gmail.com",
-      "jobtitle": "front-end",
-      "type": "user",
-      "avatar": "url",
-      "id": "6"
-    },
-    {
-      "name": "MajdJadallha",
-      "password": "123456789",
-      "email": "Majd@gmail.com",
-      "jobTitle": "b",
-      "type": "user",
-      "avatar": "url",
       "birthday": "2023-06-27",
       "phonenumber": "0774567890",
       "jobRole": "bb",
@@ -78,8 +14,27 @@
       "Qualification": "bb",
       "Education": "b",
       "Skills": "b",
-      "Cv": "C:\\fakepath\\final3.jpg",
-      "id": "CUnIB7i"
+      "Aboutus":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?",
+      "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png",
+      "id": "1"
+    },
+    {
+      "name": "Tasneem",
+      "password": "123456789",
+      "email": "tasneem@gmail.com",
+      "jobtitle": "full-stack",
+      "birthday": "2023-06-27",
+      "phonenumber": "0774567890",
+      "jobRole": "bb",
+      "Experience": "bbb",
+      "Location": "mm",
+      "Qualification": "bb",
+      "Education": "b",
+      "Skills": "b",
+      "Aboutus":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?",
+      "type": "user",
+      "avatar": "url",
+      "id": "2"
     }
   ],
   "company": [

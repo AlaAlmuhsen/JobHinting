@@ -5,11 +5,22 @@ import { Link } from "react-router-dom";
 const CompanyData = ({ company }) => {
   return (
     <>
-   
+      <nav className="navbar navbar-light bg-light">
+          <div className="container-fluid">
+            <h1 className="h3 d-inline align-middle px-3">Profile</h1>
+
+          
+
+           
+
+              <span className="input-group-text border-0" id="search-addon">
+          </span>
+              
+          </div>
+        </nav>
       <main>
         <div className="container-fluid ">
           <div className="mb-3">
-            <h1 className="h3 d-inline align-middle">Profile</h1>
             <Link
               className="badge bg-dark text-white ms-2"
               to="upgrade-to-pro.html"
