@@ -369,7 +369,7 @@ const Profile = () => {
              <div class="title">
                 <p class="bold">About us</p>
               </div>
-             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?</p>
+             <p>{users.Aboutus}</p>
          </div>
          <div class="resume_item resume_work">
              <div class="title">
