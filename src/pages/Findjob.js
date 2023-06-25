@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import JobSearch from '../components/JobSearch';
 import jobSeeker from '../images/jobSeeker.png'
 import Footer from '../components/Footer';
+
 const Findjob = () => {
   return (
     <div className='find-job'>

@@ -17,6 +17,7 @@ list-style: none !important;
 }
 /* start NavBar*/
 #navbar{
+
 background-color:var(--main-color) ;
 padding: .5rem 0 .5rem 5rem;
 }
@@ -42,16 +43,18 @@ font-size: 2rem;
 color: #ffffff;
 font-weight: 600;
 font-size: 1.1rem;
-margin-left: 2rem;
+/* margin-left: 2rem; */
 }
-#nav-container{
+/* #nav-container{
 gap: 4rem;
-}
+} */
 /* end NavBar*/
+
 /*Footer start*/
 #footer{
 background-color:var(--main-color);
 display: flex;
+flex-wrap: wrap;
 align-items: center;
 justify-content: space-between;
 gap: 6rem;
@@ -83,13 +86,84 @@ gap: 2rem;
 color: #fff;
 }
 /*Footer End*/
+
 /*  Start Home */
-#background{
-  width: 100%;
-  height: 95vh;
+.home > #grid-categories > .row > .col > .card > .Link{
+  text-decoration: none;
+  color: var(--main-color)
 }
 
+.home > .row > #column > #headline {
+  margin-top: 24%;
+}
+
+.home > .row > #column > #quote{
+  font-size: x-large;
+  font-style: italic;
+}
+
+/* jumbotron col on the left */
+.home > .row > #column{
+  margin-left: 10%;
+}
+
+.home > #jumbotron-row{
+  margin-right: 0;
+}
+
+.home > .row > .col > #image{
+margin-top: 10vh;
+margin-left: 10%;
+}
+
+.home > #title {
+  margin-top: 2%;
+  margin-left: 8%;
+}
+
+.home > #grid-categories > #second-row-grid{
+  margin-top: 5%;
+}
+
+.home > #grid-categories{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 90%;
+}
+
+/* card style */
+.home > #grid-categories > .row > .col > .card {
+  font-size: x-large;
+  box-sizing: border-box;
+  width: 190px;
+  height: 254px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.home > #grid-categories > .row > .col > .card:hover {
+  border: 1px solid var(--main-color);
+  transform: scale(1.05);
+}
+
+.home > #grid-categories > .row > .col > .card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+/* end of card style */
 /*  End Home */
+
 /*Details Page start*/
 #details-body{
 height: 80.5vh;
