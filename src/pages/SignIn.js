@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 function SignIn() {
   return (
     <div>
-      <Link to='/Profile'>SignIn</Link>
+    
     </div>
   )
 }

@@ -59,6 +59,16 @@ const Header = ({ active }) => {
                   Browse Companies
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  to="/profile"
+                  className={"nav-link ".concat(
+                    active === "browse" ? "active" : ""
+                  )}
+                >
+                 Profile
+                </Link>
+              </li>
             </ul>
             
             {sessionStorage.getItem("userActive") === "true" &&

@@ -25,7 +25,7 @@ function App() {
       <Route path='/UpdateProfile' element={<UpdateProfile />}/>
       <Route path='/jobdetails/:id' element={<JobDetails />}/>
       <Route path='/SignUp' element={<SignIn />}/>
-      <Route path='//Profile' element={<Profile />}/>
+      <Route path='/Profile' element={<Profile />}/>
       <Route path='/browsecompanies' element={<Browsecompanies />}/>
       <Route path='/dashboard' element={<DashBoard />}/>
       <Route path='/dashboard/postjob' element={<PostJob />}/>
