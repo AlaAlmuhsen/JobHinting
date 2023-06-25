@@ -633,24 +633,7 @@ align-items: center;
 #AplliedContent  #man{
 width: 20%;
 }
-@media (max-width: 450px) {
-#appliedForm{
-padding: 1rem ;
-}
-.AppliedPageForm{
-padding:.5rem .1rem;
-width: 100%;
-}
-#AplliedContent{
-display: block;
-}
-#AplliedContent #appliedForm #applyNow{
-margin-top: 0;
-}
-#AplliedContent  #man{
-margin-left: 70%;
-}
-}
+
 @media (max-width: 1024px) {
 .AppliedPageForm{
 padding:.5rem .1rem;
@@ -660,6 +643,25 @@ width: 100%;
 padding: 1rem 2rem;
 }
 }
+@media (max-width: 450px) {
+  #appliedForm{
+  padding: 1rem ;
+  }
+  .AppliedPageForm{
+  padding:.5rem .1rem;
+  width: 100%;
+  }
+  #AplliedContent{
+  display: block;
+  padding: 0;
+  }
+  #AplliedContent #appliedForm #applyNow{
+  margin-top: 0;
+  }
+  #AplliedContent  #man{
+  margin-left: 70%;
+  }
+  }
 /*End Applied*/
 
 /*start Details*/
