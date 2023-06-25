@@ -113,8 +113,9 @@ color: #fff;
 }
 
 .home > .row > .col > #image{
-margin-top: 10vh;
+margin-top: 3vh;
 margin-left: 10%;
+height: 90%;
 }
 
 .home > #title {
