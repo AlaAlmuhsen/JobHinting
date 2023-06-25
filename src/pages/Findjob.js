@@ -18,12 +18,7 @@ const Findjob = () => {
       </div>
       <div className='content'>
         <div className="row m-0 g-5">
-          {/* <div className="col-3 p-0 " id='filtersDiv'>
-          </div> */}
-          <div className="col-9 p-0">
           <JobSearch/>
-
-          </div>
         </div>
       </div>
       <Footer/>
