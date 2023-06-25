@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useNavigate, useParams } from 'react-router-dom';
-
+import man from '../images/apply.png'
 function Applied() {
   const [firstname, setFirstname] = useState('');
   const [lastname, setLastname] = useState('');
@@ -65,6 +65,7 @@ function Applied() {
   return (
     <div id="AppliedPage">
         <Header />
+        <div id='AplliedContent'>
         <form onSubmit={handleSubmit} id='appliedForm'>
         <h1 id='applyNow'>Apply Now</h1>
         <div className='row g-4 AppliedPageForm'>
@@ -188,6 +189,9 @@ function Applied() {
           <button type="submit" id='submit'>Submit</button>
         </div>
         </form>
+        <img src={man} alt='man' id="man"/>
+        </div>
+        
         <Footer />
       
     </div>

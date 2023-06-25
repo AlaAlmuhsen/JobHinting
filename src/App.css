@@ -11,6 +11,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Roboto Slab', serif;
 }
 ul , li {
 list-style: none !important;
@@ -552,8 +553,41 @@ color: var(--main-color);
 border-color:var(--main-color);
 }
 /* end post job */
+
+
+/*start Profile*/
+/*End Profile*/
+
+/*start FindJob*/
+/*End FindJob*/
+
+/*start Applied*/
+#AplliedContent #appliedForm #applyNow{
+margin-top: 2rem;
+}
+#AppliedPage .AppliedPageForm .input-box{
+display: flex;
+flex-direction: column;
+}
+#AppliedPage .AppliedPageForm .input-box input{
+padding:5px;
+text-align: start;
+}
+#AppliedPage .AppliedPageForm .input-box label{
+font-weight: 600;
+font-size: 1.2rem;
+margin-bottom: 10px;
+color: var(--main-color);
+}
+.AppliedPageForm #submit{ 
+background-color: var(--main-color); 
+color: #fff; padding: 5px; 
+border-radius:15px ;
+width: 5rem;
+margin-left: 45%;
+}
 #appliedForm{
-padding: 1rem 4rem;
+/* padding: 1rem 4rem; */
 margin:auto;
 display: flex;
 flex-direction: column;
@@ -562,7 +596,7 @@ gap: 2rem;
 }
 .AppliedPageForm{
 background-color: #fff;
-padding: 4rem 10rem;
+/* padding: 4rem 10rem; */
 margin-top: 4rem;
 border-radius:15px ;
 width: 80%;
@@ -591,20 +625,99 @@ color: var(--main-color);
 font-weight: bold;
 text-transform: capitalize;
 }
+#AplliedContent{
+display: flex;
+align-items: center;
+}
+#AplliedContent  #man{
+width: 20%;
+}
 @media (max-width: 450px) {
 #appliedForm{
 padding: 1rem ;
 }
+.AppliedPageForm{
+padding:.5rem .1rem;
+width: 100%;
 }
-
-/*start Profile*/
-/*End Profile*/
-
-/*start FindJob*/
-/*End FindJob*/
-
-/*start Applied*/
+#AplliedContent{
+display: block;
+}
+#AplliedContent #appliedForm #applyNow{
+margin-top: 0;
+}
+#AplliedContent  #man{
+margin-left: 70%;
+}
+}
+@media (max-width: 1024px) {
+.AppliedPageForm{
+padding:.5rem .1rem;
+width: 100%;
+}
+#AplliedContent{
+padding: 1rem 2rem;
+}
+}
 /*End Applied*/
 
 /*start Details*/
+#job-details-body{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#job-details-body img{
+width: 50px;
+}
+.JobDetails #job-details-body .job-data{
+display: flex;
+gap: 1rem;
+}
+.job-data p{
+font-size: 1.1rem;
+font-weight: 600;
+}
+#job-details-body .details-card{
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+padding: 2rem 6rem;
+width: 65%;
+margin-bottom: 5rem;
+border-radius: 15px;
+}
+#job-details-body .details-card #applyButton{
+text-decoration: none;
+background-color: var(--main-color);
+color: #fff;
+font-weight:600;
+padding: 10px 20px;
+border-radius:15px ;
+
+}
+#job-details-body{
+color:var(--main-color);
+}
+#job-details-body p{
+font-size: 1.2rem;
+margin-bottom: 3rem;
+}
+@media (max-width:1024px){
+#job-details-body .details-card{
+width: 70%;
+padding: 2rem;
+}
+}
+@media (max-width:425px){
+#job-details-body .details-card{
+width: 90%;
+}
+#job-details-body p{
+font-size: 1rem;
+}
+#job-details-body .details-card #applyButton{
+font-weight: 400;
+font-size: .9rem;
+padding: 7px 10px;
+text-align: center;
+}}
 /*End Details*/

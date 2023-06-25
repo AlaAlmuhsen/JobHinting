@@ -84,9 +84,9 @@
   ],
   "company": [
     {
-      "name": "discord",
+      "name": "Discord",
       "indusrty": "voice",
-      "country": "usa",
+      "country": "USA",
       "email": "discord@discord.com",
       "password": "discord123",
       "type": "company",
@@ -117,7 +117,7 @@
   "jobs": [
     {
       "title": "UI-Ux",
-      "desc": "lorem lorem lorem lorem lorem",
+      "desc": "We are seeking a talented and creative UI/UX Designer to join our dynamic team. As a UI/UX Designer, you will be responsible for creating engaging and intuitive user experiences for our digital products. Your primary focus will be on designing user interfaces that are visually appealing, user-friendly, and align with our brand guidelines. You will collaborate closely with cross-functional teams including product managers, developers, and other designers to ensure that our products meet the needs and expectations of our users. If you have a passion for creating exceptional user experiences and possess a strong understanding of design principles, this is an excellent opportunity to contribute to our organization's success.",
       "companyId": 1,
       "dateOfPost": "2023/8/15",
       "category": "tec",
