@@ -3,6 +3,8 @@ import { Row, Col, Card } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
 
 function JobSearch() {
+  let concatenatedArray = []
+  let slicedArr = []
   const [jobs, setJobs] = useState([]);
   const [isPending, setIsPending] = useState(true);
   const [error, setError] = useState(null);
@@ -64,10 +66,9 @@ function JobSearch() {
   }
   // *********************************************************************************************************
   //added Part-time for the 9 ids
-  
- 
+
   useEffect(() => {
-     if(category === null)
+     if(category === undefined)
     setFilteredList(jobs);
   }, [jobs]);
 
@@ -139,7 +140,9 @@ function JobSearch() {
     );
 
     if(typeOfEmploymentResult != null){
-    setFilteredList(typeOfEmploymentResult[0]);
+    // setFilteredList(typeOfEmploymentResult[0]);
+    concatenatedArray = [].concat(...typeOfEmploymentResult);
+    filteredList = concatenatedArray
   }
 
     // Category filter section
@@ -152,10 +155,11 @@ function JobSearch() {
     );
 
     if(categoryResult != null){
-       setFilteredList(categoryResult[0]);
+      concatenatedArray = [].concat(...categoryResult);
+        filteredList = concatenatedArray
+        // filteredList = filteredList.concat(...concatenatedArray)
     }
    
-
     // Job level filter section
     let truejoblevel = Object.keys(joblevelValue).filter(
       (prop) => joblevelValue[prop] === true
@@ -166,10 +170,16 @@ function JobSearch() {
     );
 
     if(joblevelResult != null){
-       setFilteredList(joblevelResult[0]);
+      concatenatedArray = [].concat(...joblevelResult);
     }
-    // console.log(joblevelResult[0])
+    
+setFilteredList(concatenatedArray)
   };
+  
+    if(filteredList != undefined){
+          slicedArr = filteredList.slice(0, 12);
+    }
+
 
   return (
     <>
@@ -351,7 +361,8 @@ function JobSearch() {
         {isPending && <p>Loading...</p>}
         {error && <p>{error}</p>}
         <Row>
-          {filteredList.slice(0, 12).map((job) => (
+          {
+          slicedArr.map((job) => (
             <Col key={job.id} md={6} className="h-100">
               <Card id="card">
                 <Card.Body>
