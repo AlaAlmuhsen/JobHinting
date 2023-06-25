@@ -1,18 +1,18 @@
 {
   "users": [
     {
-      "name": "asc",
+      "name": "ِtasneem Shehadeh",
       "password": "alaa123",
-      "email": "alaa@gmail.com",
+      "email": "tasneem@gmail.com",
       "jobtitle": "full-stack",
       "type": "user",
       "birthday": "2023-06-27",
       "phonenumber": "0774567890",
       "jobRole": "bb",
-      "Experience": "bbb",
-      "Location": "mm",
+      "Experience": "senior",
+      "Location": "Amman",
       "Qualification": "bb",
-      "Education": "b",
+      "Education": "software engineering",
       "Skills": "b",
       "Aboutus":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis illo fugit officiis distinctio culpa officia totam atque exercitationem inventore repudiandae?",
       "avatar": "https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/112.png",
