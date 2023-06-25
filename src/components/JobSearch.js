@@ -64,7 +64,10 @@ function JobSearch() {
   }
   // *********************************************************************************************************
   //added Part-time for the 9 ids
+  
+ 
   useEffect(() => {
+     if(category === null)
     setFilteredList(jobs);
   }, [jobs]);
 

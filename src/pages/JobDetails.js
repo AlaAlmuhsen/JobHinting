@@ -46,23 +46,40 @@ const JobDetails = () => {
       });
   }, [id]);
   return (
-    <div >
+    <div className='JobDetails'>
     <Header/>
       {error && <h1>{error}</h1>}
       {isPending && <h1>Loading...</h1>}
       {jobData && companyData && (
-        <div id='details-body'>
-        <p>{jobData.title}</p>
-        <p>{jobData.desc}</p>
-          <h1>{companyData.type}</h1>
-          <p>{companyData.email}</p>
-          <p>{companyData.name}</p>
-          <p>{companyData.indusrty}</p>
-          <p>{companyData.country}</p>
-          <img src={companyData.logo} alt='companyLogo' id='companyId'/>
-          <h2>{companyData.name}</h2>
-          <p>{companyData.indusrty}</p>
-          <Link to={`/Applied/${jobData.id}/${jobData.companyId}/${jobData.jobLevel}/${jobData.typeOfEmployment}/${jobData.title}/${companyData.name}`}>Applied</Link>
+        <div id='job-details-body'>
+        <img src={companyData.logo} alt='companyLogo' id='companyId'/>
+        <h3>{jobData.title}</h3>
+        <div className='job-data'>
+        <p>{jobData.category}-{jobData.typeOfEmployment}</p>
+        {/* <p>{jobData.jobLevel}</p> */}
+        </div>
+        <div className='details-card'>
+          <h2>We Are Hiring </h2>
+          <p>We are Hiring about {jobData.title} employment to be on of our team at  {companyData.name }  {companyData.type} </p>
+          <h4>About  {companyData.name} </h4>
+          <p>The {companyData.name} was working in the {companyData.indusrty} industry at {companyData.country} for tens years and it achieve alot of achievement in this industry So ,it was senstive to choose their employments to be one of the great team that make it able to make alot of the achievements  </p>
+          <p></p>
+        
+          <h4>Job Descripition</h4>
+          <p>{jobData.desc}</p>
+          
+          <Link
+          to=
+          {`/Applied/${jobData.id}/
+          ${jobData.companyId}/
+          ${jobData.jobLevel}/
+          ${jobData.typeOfEmployment}/
+          ${jobData.title}/
+          ${companyData.name}`}
+          id='applyButton'>
+          Applied
+          </Link>
+          </div>
         </div>
       )}
       <Footer/>
