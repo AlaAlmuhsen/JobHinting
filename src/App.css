@@ -137,10 +137,11 @@ height: 90%;
 .home > #grid-categories > .row > .col > .card {
   font-size: x-large;
   box-sizing: border-box;
-  width: 190px;
-  height: 254px;
-  background: rgba(217, 217, 217, 0.58);
+  width: 200px;
+  height: 200px;
+  background-color: var(--main-color);
   border: 1px solid white;
+  color: white !important;
   box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
   backdrop-filter: blur(6px);
   border-radius: 17px;
@@ -150,11 +151,19 @@ height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-  user-select: none;
   font-weight: bolder;
   color: black;
+  position: relative;
 }
-
+.home > #grid-categories > .row > .col > .card i{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.home > #grid-categories > .row > .col > .card a{
+  color: white !important;
+  position: absolute;
+  bottom: 15px;
+}
 .home > #grid-categories > .row > .col > .card:hover {
   border: 1px solid var(--main-color);
   transform: scale(1.05);

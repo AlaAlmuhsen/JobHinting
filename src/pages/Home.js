@@ -32,6 +32,7 @@ const Home = () => {
         <Row class="row">
           <Col class="col">
             <div class="card">
+              <i class="fa-solid fa-microchip"></i>
               <Link className="Link" to={`/findjob/Technology`}>
                 Technology
               </Link>
@@ -40,6 +41,7 @@ const Home = () => {
 
           <Col class="col">
             <div class="card">
+            <i class="fa-solid fa-person-digging"></i>
               <Link className="Link" to={`/findjob/Engineering`}>
                 Engineering
               </Link>
@@ -48,6 +50,7 @@ const Home = () => {
 
           <Col class="col">
             <div class="card">
+            <i class="fa-solid fa-business-time"></i>
               <Link className="Link" to={`/findjob/Business`}>
                 Business
               </Link>
@@ -56,6 +59,7 @@ const Home = () => {
 
           <Col class="col">
             <div class="card">
+            <i class="fa-solid fa-hospital"></i>
               <Link className="Link" to={`/findjob/Meadical`}>
                 Meadical
               </Link>
@@ -66,6 +70,7 @@ const Home = () => {
         <Row class="row" id="second-row-grid">
           <Col class="col">
             <div class="card">
+            <i class="fa-solid fa-lightbulb"></i>
               <Link className="Link" to={`/findjob/Sales`}>
                 Sales
               </Link>
@@ -74,6 +79,7 @@ const Home = () => {
 
           <Col class="col">
             <div class="card">
+              <i class="fa-solid fa-comments-dollar"></i>
               <Link className="Link" to={`/findjob/Marketing`}>
                 Marketing
               </Link>
@@ -82,6 +88,7 @@ const Home = () => {
 
           <Col class="col">
             <div class="card">
+          <i class="fa-solid fa-receipt"></i>
               <Link className="Link" to={`/findjob/Accounting`}>
                 Accounting
               </Link>
@@ -90,6 +97,7 @@ const Home = () => {
 
           <Col class="col">
             <div class="card">
+            <i class="fa-solid fa-chalkboard"></i>
               <Link className="Link" to={`/findjob/Teaching`}>
                 Teaching
               </Link>
