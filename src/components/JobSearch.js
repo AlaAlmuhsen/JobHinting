@@ -173,6 +173,7 @@ function JobSearch() {
 
   return (
     <>
+    <div className="col-3 p-0">
       <div style={{ color: "white" }}>
         <h6>Type of Employment</h6>
         <div className="form-check">
@@ -335,38 +336,40 @@ function JobSearch() {
           </label>
         </div>
       </div>
-      {/* end of filter section */}
-
-      <div className="AllJob">
-        <h1 id="title-of-card">All Jobs</h1>
-        <input
-          placeholder="Enter the job search"
-          value={inputValue}
-          onChange={inputFunction}
-          id="inputField"
-        />
       </div>
-      {isPending && <p>Loading...</p>}
-      {error && <p>{error}</p>}
-      <Row>
-        {filteredList.slice(0, 12).map((job) => (
-          <Col key={job.id} md={6} className="h-100">
-            <Card id="card">
-              <Card.Body>
-                <Card.Title id="title-job">{job.title}</Card.Title>
-                <Card.Text>{job.desc}</Card.Text>
-                {/* <Card.Text>{job.typeOfEmployment}</Card.Text>
-                <Card.Text>{job.jobLevel}</Card.Text>
-                <Card.Text>{job.category}</Card.Text> */}
-                <Link to={`/jobdetails/${job.id}`} id="more">
-                  Details
-                </Link>
-              </Card.Body>
-            </Card>
-            <br />
-          </Col>
-        ))}
-      </Row>
+      {/* end of filter section */}
+      <div className="col-9 p-0">
+        <div className="AllJob">
+          <h1 id="title-of-card">All Jobs</h1>
+          <input
+            placeholder="Enter the job search"
+            value={inputValue}
+            onChange={inputFunction}
+            id="inputField"
+          />
+        </div>
+        {isPending && <p>Loading...</p>}
+        {error && <p>{error}</p>}
+        <Row>
+          {filteredList.slice(0, 12).map((job) => (
+            <Col key={job.id} md={6} className="h-100">
+              <Card id="card">
+                <Card.Body>
+                  <Card.Title id="title-job">{job.title}</Card.Title>
+                  <Card.Text>{job.desc}</Card.Text>
+                  {/* <Card.Text>{job.typeOfEmployment}</Card.Text>
+                  <Card.Text>{job.jobLevel}</Card.Text>
+                  <Card.Text>{job.category}</Card.Text> */}
+                  <Link to={`/jobdetails/${job.id}`} id="more">
+                    Details
+                  </Link>
+                </Card.Body>
+              </Card>
+              <br />
+            </Col>
+          ))}
+        </Row>
+        </div>
     </>
   );
 }
